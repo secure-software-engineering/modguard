@@ -35,6 +35,9 @@ We provide the following artifacts:
 
 
 * The mandatory argument `CMD` can be one of the following:
+	* __gui__ 
+	: starts a simple user interface to re-run all experiements and case-studies
+
 	* __susi__ 
 	: runs SuSi on Tomcat to identify critical methods, results are stored in the folder `SuSi_RESULTS`
 
