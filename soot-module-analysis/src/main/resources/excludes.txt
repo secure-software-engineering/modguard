@@ -1,0 +1,10 @@
+java.lang.invoke.MethodHandleNatives*
+java.lang.invoke.MethodHandleStatics*
+java.lang.invoke.MethodHandleProxies*
+java.lang.invoke.DirectMethodHandle$Holder
+java.lang.invoke.DirectMethodHandle*
+java.lang.invoke.BoundMethodHandle*
+java.lang.invoke.MethodHandleImpl*
+java.lang.invoke.MethodHandleInfo*
+java.lang.invoke.StringConcatFactory$MethodHandleInlineCopyStrategy
+java.lang.invoke.StringConcatFactory$MethodHandleStringBuilderStrategy

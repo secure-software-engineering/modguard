@@ -1,0 +1,4 @@
+sun.awt.SunToolkit
+jdk.internal.loader.ClassLoaders$BootClassLoader
+java.lang.invoke.MethodHandles$Lookup
+java.lang.invoke.MethodHandle

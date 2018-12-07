@@ -1,0 +1,595 @@
+// hand over the values for this fields from Soot
+_sensitiveField(?field) -> Field(?field).
+_sensitiveType(?type) -> Type(?type).
+_sensitiveMethod(?method) -> Method(?method).
+
+ _accessibleField(?field, ?value, ?type, ?id) -> Field(?field), Value(?value), Type(?type), string(?id).
+
+// preprocessor to decide if arrays and collections should be included
+	#ifndef ARRAYCOL
+
+	#define ARRAYSTUF , !CollectionLibraryClass(?type),	!ArrayType(?type).
+	#else
+	#define ARRAYSTUF .
+	#endif
+
+
+
+
+// get PTS of sensitiveFields
+
+
+
+
+
+// get reachable pts
+
+
+// return values of entrypoints
+_ReturnVarPTS(?var,?type, ?value, ?id, ?hctx, ?ctx) <-
+	EntryPoint(?meth),
+	ReturnVar(?var,?meth),
+	VarPointsTo(?hctx, ?value, ?ctx, ?var),
+	Value:Type[?value]=?type,
+	Value:Id[?value]=?id ARRAYSTUF
+
+
+
+
+// the mock objects (instances from entrypoints <init> calls, and their parameters)
+_MockObjPts(?mock,?type,?value,?id) <-
+	MockObjFromEntryPoint(?type),
+	Value:Mock:Cons[?mock]=?value,
+	Value:Type[?value]=?type,
+	Value:Id[?value]=?id ARRAYSTUF
+
+
+// the mock objects formals (mock objects used as parameter)
+_MockObjForFormalPTS(?formal, ?type, ?value, ?id, ?method) <-
+	MockForFormal(?value,?formal, ?type, ?method),
+	Value:Id[?value]=?id ARRAYSTUF
+
+
+
+// call back methods
+// get the PTS of all parameters of Mock Objects' methods
+_formOfMack(?formal, ?type, ?formalType, ?method, ?methodFormal, ?retType, ?value, ?id, ?hctx, ?ctx) <-
+	MockForFormal(?formalValue, ?formal, ?type, _),
+	Value:Type[?formalValue] = ?formalType,
+	Method:DeclaringType[?method] = ?formalType,
+	Method:Modifier("public", ?method),
+	!Method:Modifier("final",?method),
+	Method:DeclaringType[?method] = ?declType,
+	ClassModifier("public", ?declType),
+	!ClassModifier("final", ?declType),
+	FormalParam[_, ?method] = ?methodFormal,
+	VarPointsTo(?hctx, ?value, ?ctx, ?methodFormal),
+	Value:Type[?value] = ?retType,
+	Value:Id[?value]=?id ARRAYSTUF
+
+
+
+
+//get the all fields, accessible from the outside
+
+
+// instance field from mock 2
+_accessibleField(?field, ?fieldValue, ?type, ?id) <-
+	_MockObjPts(?mock,?mockType,?value, ?id),
+	!Type:null(?mockType),
+	_getAllAccessibleFieldsOfType(?mockType, ?field),
+	!Field:Modifier("static",?field),
+	InstanceFieldPointsTo(?hctx, ?fieldValue, ?field, _ , ?value),
+	Value:Type[?fieldValue]=?type,
+	Value:Id[?fieldValue]=?fid ARRAYSTUF
+
+
+// static fields from mocks 1
+_accessibleField(?field, ?fieldValue, ?type, ?id) <-
+	_MockObjPts(?mock,?mockType,?value, ?id),
+	!Type:null(?mockType),
+	_getAllAccessibleFieldsOfType(?mockType, ?field),
+	Field:Modifier("static",?field),
+	StaticFieldPointsTo(_, ?fieldValue, ?field),
+	Value:Type[?fieldValue]=?type,
+	Value:Id[?fieldValue]=?fid ARRAYSTUF
+
+
+
+
+
+
+
+
+// instance field from return
+
+_accessibleField(?field, ?fieldValue, ?fieldType, ?id) <-
+	_ReturnVarPTS(?var,?type, ?value, ?id, ?hctx, ?ctx),
+	 !Type:null(?type),
+	_getAllAccessibleFieldsOfType(?type, ?field),
+	!Field:Modifier("static",?field),
+	InstanceFieldPointsTo(?hctx, ?fieldValue, ?field, _ , ?value),
+	Value:Type[?fieldValue]=?fieldType,
+	Value:Id[?fieldValue]=?fid ARRAYSTUF
+
+
+// static field from return
+_accessibleField(?field, ?fieldValue, ?type, ?id) <-
+	_ReturnVarPTS(?var,?rettype, ?value, ?id, ?hctx, ?ctx),
+	   !Type:null(?rettype),
+	_getAllAccessibleFieldsOfType(?rettype, ?field),
+	Field:Modifier("static",?field),
+	StaticFieldPointsTo(_, ?fieldValue, ?field),
+	Value:Type[?fieldValue]=?type,
+	Value:Id[?fieldValue]=?fid ARRAYSTUF
+
+
+
+
+
+
+// instance field from formals
+
+_accessibleField(?field, ?fieldValue, ?type, ?id) <-
+	_MockObjForFormalPTS(?formal, ?mtype, ?value, ?id, ?method),
+	   !Type:null(?mtype),
+	_getAllAccessibleFieldsOfType(?mtype, ?field),
+	!Field:Modifier("static",?field),
+	InstanceFieldPointsTo(?hctx, ?fieldValue, ?field, _ , ?value),
+	Value:Type[?fieldValue]=?type,
+	Value:Id[?fieldValue]=?fid ARRAYSTUF
+
+
+// static field from formals
+_accessibleField(?field, ?fieldValue, ?type, ?id) <-
+	_MockObjForFormalPTS(?formal, ?mtype, ?value, ?id, ?method),
+	!Type:null(?mtype),
+	_getAllAccessibleFieldsOfType(?mtype, ?field),
+	Field:Modifier("static",?field),
+	StaticFieldPointsTo(_, ?fieldValue, ?field),
+	Value:Type[?fieldValue]=?type,
+	Value:Id[?fieldValue]=?fid ARRAYSTUF
+
+
+
+
+
+
+
+
+// instance field from formals mocks
+
+_accessibleField(?field, ?fieldValue, ?type, ?id) <-
+	_formOfMack(?formal, ?mtype, ?formalType, ?method, ?methodFormal, ?retType, ?value, ?id, ?hctx, ?ctx),
+	!Type:null(?retType),
+	_getAllAccessibleFieldsOfType(?retType, ?field),
+	!Field:Modifier("static",?field),
+	InstanceFieldPointsTo(?hctx, ?fieldValue, ?field, _ , ?value),
+	Value:Type[?fieldValue]=?type,
+	Value:Id[?fieldValue]=?fid ARRAYSTUF
+
+
+// static field from formals mocks
+_accessibleField(?field, ?fieldValue, ?type, ?id) <-
+	_formOfMack(?formal, ?ftype, ?formalType, ?method, ?methodFormal, ?retType, ?value, ?id, ?hctx, ?ctx),
+	 !Type:null(?retType),
+	_getAllAccessibleFieldsOfType(?retType, ?field),
+	Field:Modifier("static",?field),
+	StaticFieldPointsTo(_, ?fieldValue, ?field),
+	Value:Type[?fieldValue]=?type,
+	Value:Id[?fieldValue]=?fid ARRAYSTUF
+
+
+
+//recursive fields
+
+
+
+
+
+
+
+
+
+
+//get all accessible fields
+
+// accessible fields of the exported supertypes
+
+_getAllAccessibleFieldsOfType(?type, ?field) <-
+   !Type:null(?type),
+   SupertypeOf(?superClass, ?type),
+   ExportedType(?superClass),
+   ClassModifier("public",?superClass),
+	Field:DeclaringType[?field] = ?superClass,
+	(
+		Field:Modifier("public",?field);
+		(Field:Modifier("protected",?field),
+		Field:Modifier("static", ?field))
+	).
+
+
+
+// simple iteration
+_getAllAccessibleFieldsOfType(?type, ?field) <-
+	!Type:null(?type),
+	ExportedType(?type),
+	ClassModifier("public",?type),
+	Field:DeclaringType[?field] = ?type,
+	(
+		Field:Modifier("public",?field);
+		(Field:Modifier("protected",?field),
+		Field:Modifier("static", ?field))
+	).
+
+
+
+
+
+
+//when one of the pts is array check array stuff...
+//deal with arrays
+
+_accessibleArrayContentt(?value, ?basehctx, ?type, ?id) -> Value(?value), HContext(?basehctx), Type(?type), string(?id).
+
+
+#ifdef ARRAYCOL
+
+//array field
+_accessibleArrayContentt(?value, ?basehctx, ?type, ?id) <-
+	_accessibleField(?accfield, ?accfieldValue, ?accfieldType, _),
+	ArrayType(?accfieldType),
+	ArrayIndexPointsTo(?hctx, ?value, ?basehctx, ?accfieldValue),
+	Value:Type[?value]=?type,
+	Value:Id[?accfieldValue] = ?id.
+
+
+//array mocks
+_accessibleArrayContentt(?value, ?basehctx, ?type, ?id) <-
+	_MockObjPts(?mock,?mockType,?mockValue,?id),
+	ArrayType(?mockType),
+	ArrayIndexPointsTo(?hctx, ?value, ?basehctx, ?mockValue),
+	Value:Type[?value]=?type,
+	Value:Id[?mockValue] = ?id.
+
+//array ReturnVar
+_accessibleArrayContentt(?value, ?basehctx, ?type, ?id) <-
+	_ReturnVarPTS(?var,?retVartype, ?retVarvalue, ?id, ?basehctx, ?retVarctx),
+	ArrayType(?retVartype),
+	ArrayIndexPointsTo(?hctx, ?value, ?basehctx, ?retVarvalue),
+	Value:Type[?value]=?type,
+	Value:Id[?retVarvalue] = ?id.
+
+// array mock formals
+_accessibleArrayContentt(?value, ?basehctx, ?type, ?id) <-
+	_MockObjForFormalPTS(?formal, ?formalType, ?formalValue, ?id, ?method),
+	ArrayType(?formalType),
+	ArrayIndexPointsTo(?hctx, ?value, ?basehctx, ?formalValue),
+	Value:Type[?value]=?type,
+	Value:Id[?formalValue] = ?id.
+
+#endif
+
+
+
+
+
+
+
+
+
+// check for violations
+
+
+// check for violations of fields
+
+_ptsOfSensitiveFields(?field,?type,?value, ?id) <-
+	_sensitiveField(?field),
+	Field:Modifier("static",?field),
+	StaticFieldPointsTo(_, ?value, ?field),
+	Value:Type[?value]=?type,
+	Value:Id[?value]=?id ARRAYSTUF
+
+
+
+_ptsOfSensitiveFields(?field,?type,?value, ?id) <-
+	_sensitiveField(?field),
+	!Field:Modifier("static",?field),
+	InstanceFieldPointsTo(?hctx, ?value, ?field, _ , _),
+	Value:Type[?value]=?type,
+	Value:Id[?value]=?id ARRAYSTUF
+
+
+
+// dependencies of fields (the actual field is not accessible but a dependency)
+_checkViolationField(?field, ?fieldValue, ?fieldType, ?id) <-
+	_ptsOfSensitiveFields(_,_, ?fieldValue, _),
+	_accessibleField(?field, ?fieldValue, ?fieldType, ?id).
+
+
+
+//field violation in accessible field
+_checkViolationField(?field, ?fieldValue, ?fieldType, ?id) <-
+	_sensitiveField(?field),
+	_accessibleField(?field, ?fieldValue, ?fieldType, ?id).
+
+
+
+_checkViolationField(?field, ?fieldValue, ?fieldType, ?id) <-
+	_ptsOfSensitiveFields(?field,?fieldType,?fieldValue,_),
+	_ReturnVarPTS(?var,?type, ?fieldValue, ?id, ?hctx, ?ctx).
+
+
+_checkViolationField(?field, ?fieldValue, ?fieldType, ?id) <-
+	_ptsOfSensitiveFields(?field,?fieldType,?fieldValue,_),
+	_MockObjForFormalPTS(_, ?type, ?fieldValue, ?id, ?method).
+
+
+_checkViolationField(?field, ?fieldValue, ?fieldType, ?id) <-
+	_ptsOfSensitiveFields(?field,?fieldType,?fieldValue,_),
+	_formOfMack(?formal, ?type, ?formalType, ?method, ?methodFormal, ?retType, ?fieldValue, ?id, ?hctx, ?ctx).
+
+
+
+_checkViolationField(?field, ?fieldValue, ?fieldType, ?id) <-
+	_ptsOfSensitiveFields(?field,?fieldType,?fieldValue, _),
+	_MockObjPts(?mock,?type,?fieldValue,?id).
+
+
+//violation in array
+_checkViolationField(?field, ?fieldValue, ?fieldType, ?id) <-
+	_accessibleArrayContentt(?fieldValue, ?basehctx, _ , ?id),
+	_ptsOfSensitiveFields(?field,?fieldType,?fieldValue, _).
+
+
+// check for violations of classes
+
+// get all types SuperTypeof
+
+// fields
+_checkClassViolation(?type, ?type, ?id) <-
+	_sensitiveType(?type),
+	_accessibleField(?field, _ , ?type, ?id).
+
+
+_checkClassViolation(?type, ?actualType, ?id) <-
+	_sensitiveType(?actualType),
+	_accessibleField(_,_, ?type, ?id),
+	!Type:null(?type),
+	SupertypeOf(?actualType, ?type).
+
+
+
+//return vars
+
+
+_checkClassViolation(?type, ?type , ?id) <-
+	_sensitiveType(?type),
+	_ReturnVarPTS(?var,?type, ?value, ?id, ?hctx, ?ctx).
+
+
+_checkClassViolation(?senType, ?actualType, ?id) <-
+	_sensitiveType(?actualType),
+	_ReturnVarPTS(?var,?senType, ?value, ?id, ?hctx, ?ctx),
+	!Type:null(?senType),
+	SupertypeOf(?actualType, ?senType).
+
+
+
+
+//  mock objects
+_checkClassViolation(?senType, ?senType, ?id) <-
+	_sensitiveType(?senType),
+	_MockObjForFormalPTS(_, ?senType, ?value, ?id, ?method)	.
+
+_checkClassViolation(?senType, ?actualType, ?id) <-
+	_sensitiveType(?actualType),
+	_MockObjForFormalPTS(_, ?senType, ?value, ?id, ?method),
+	!Type:null(?senType),
+	SupertypeOf(?actualType, ?senType).
+
+
+
+
+//  mock formals
+
+_checkClassViolation(?senType, ?senType, ?id) <-
+	_sensitiveType(?senType),
+	_formOfMack(?formal, ?type, ?formalType, ?method, ?methodFormal, ?senType, ?fieldValue, ?id, ?hctx, ?ctx).
+
+_checkClassViolation(?senType, ?actualType, ?id) <-
+_sensitiveType(?actualType),
+	_formOfMack(?formal, ?type, ?formalType, ?method, ?methodFormal, ?senType, ?fieldValue, ?id, ?hctx, ?ctx),
+	!Type:null(?senType),
+	SupertypeOf(?actualType, ?senType).
+
+
+// mock
+
+
+_checkClassViolation(?senType, ?senType, ?id) <-
+	_sensitiveType(?senType),
+	_MockObjPts(?mock,?senType,?value,?id).
+
+
+_checkClassViolation(?senType, ?actualType, ?id) <-
+	_sensitiveType(?actualType),
+	_MockObjPts(?mock,?senType,?value,?id),
+	!Type:null(?senType),
+	SupertypeOf(?actualType, ?senType).
+
+
+// array
+
+_checkClassViolation(?senType, ?senType, ?id) <-
+_sensitiveType(?senType),
+	_accessibleArrayContentt(?value, ?basehctx, ?senType, ?id).
+
+
+_checkClassViolation(?senType, ?actualType, ?id) <-
+	_sensitiveType(?actualType),
+	_accessibleArrayContentt(?value, ?basehctx, ?senType, ?id),
+	!Type:null(?senType),
+	SupertypeOf(?actualType, ?senType).
+
+
+
+
+
+// check violations methods
+
+
+_methodAccessible(?method) <-
+	ExplicitMethod(_,?method).
+
+_methodAccessible(?method) <-
+	ImplicitMethod(_,?method).
+
+_methodAccessible(?method) <-
+	EntryPoint(?method).
+
+
+
+//_methodSuperTypeAccessible(?method, ?class, ?supertype) <-
+// 	(MethodInherited(?method,?class,?supertype);
+ //      MethodInterface(?method,?class,?supertype)
+//     ),
+//     ExportedType(?supertype).
+
+
+//_methodSuperTypeAccessible(?method, ?type, ?supertype) <-
+// 	SupertypeOf(?superType,?type),
+ //	Method:DeclaringType[?method] = ?superType,
+ //    ExportedType(?supertype),
+//     Method:Modifier("public",?method).
+
+
+// fields
+_checkMethodViolation(?type, ?method, ?id) <-
+	_sensitiveMethod(?method),
+	_accessibleField(?field,_, ?type, ?id),	
+	Method:DeclaringType[?method] = ?type,
+	_methodAccessible(?method).
+
+
+
+_checkMethodViolation(?type, ?method, ?id) <-
+	_sensitiveMethod(?method),
+	_accessibleField(?field,_, ?type, ?id),
+	!Type:null(?type),
+	SupertypeOf(?superType,?type),
+ 	Method:DeclaringType[?method] = ?superType,
+     ExportedType(?superType),
+     Method:Modifier("public",?method).
+
+//return vars
+
+
+_checkMethodViolation(?type, ?method, ?id) <-
+	_sensitiveMethod(?method),
+	_ReturnVarPTS(?var,?type, ?value, ?id, ?hctx, ?ctx),
+	Method:DeclaringType[?method] = ?type,
+	_methodAccessible(?method).
+
+
+
+
+
+_checkMethodViolation(?type, ?method, ?id) <-
+_sensitiveMethod(?method),
+	_ReturnVarPTS(?var,?type, ?value, ?id, ?hctx, ?ctx),
+	!Type:null(?type),
+	SupertypeOf(?superType,?type),
+	//Method:DeclaringType[?method] = ?superType,
+ 	Method:DeclaringType[?method] = ?superType,
+     ExportedType(?superType),
+     Method:Modifier("public",?method).
+
+
+
+
+//  mock objects
+
+_checkMethodViolation(?type, ?method, ?id) <-
+	_sensitiveMethod(?method),
+	_MockObjForFormalPTS(_, ?type, ?value, ?id, ?method),
+	Method:DeclaringType[?method] = ?type,
+	_methodAccessible(?method).
+
+
+
+
+_checkMethodViolation(?type, ?method, ?id) <-
+	_sensitiveMethod(?method),
+	_MockObjForFormalPTS(_, ?type, ?value, ?id, ?method),
+	!Type:null(?type),
+	SupertypeOf(?superType,?type),
+ 	Method:DeclaringType[?method] = ?superType,
+     ExportedType(?superType),
+     Method:Modifier("public",?method).
+
+
+
+//  mock formals
+
+_checkMethodViolation(?type, ?method, ?id) <-
+_sensitiveMethod(?method),
+	_formOfMack(?formal, ?typeForFormal, ?formalType, ?method, ?methodFormal, ?type, ?fieldValue, ?id, ?hctx, ?ctx),
+	Method:DeclaringType[?method] = ?type,
+	_methodAccessible(?method).
+
+
+
+
+_checkMethodViolation(?type, ?method, ?id) <-
+	_formOfMack(?formal, ?typeForFormal, ?formalType, ?method, ?methodFormal, ?type, ?fieldValue, ?id, ?hctx, ?ctx),
+	!Type:null(?type),
+	SupertypeOf(?superType,?type),
+	_sensitiveMethod(?method),
+ 	Method:DeclaringType[?method] = ?superType,
+     ExportedType(?superType),
+     Method:Modifier("public",?method).
+
+
+// mock
+
+
+
+_checkMethodViolation(?type, ?method, ?id) <-
+	_sensitiveMethod(?method),
+	_MockObjPts(?mock,?type,?value,?id),
+	Method:DeclaringType[?method] = ?type,
+	_methodAccessible(?method).
+
+
+_checkMethodViolation(?type, ?method, ?id) <-
+	_sensitiveMethod(?method),
+	_MockObjPts(?mock,?type,?value,?id),
+	!Type:null(?type),
+	SupertypeOf(?superType,?type),
+ 	Method:DeclaringType[?method] = ?superType,
+     ExportedType(?superType),
+     Method:Modifier("public",?method).
+
+
+
+
+//array
+
+_checkMethodViolation(?type, ?method, ?id) <-
+	_sensitiveMethod(?method),
+	_accessibleArrayContentt(?value, ?basehctx, ?type, ?id),
+	Method:DeclaringType[?method] = ?type,
+	_methodAccessible(?method).
+
+
+_checkMethodViolation(?type, ?method, ?id) <-
+	_sensitiveMethod(?method),
+	_accessibleArrayContentt(?value, ?basehctx, ?type, ?id),
+	!Type:null(?type),
+	SupertypeOf(?superType,?type),
+ 	Method:DeclaringType[?method] = ?superType,
+    ExportedType(?superType),
+    Method:Modifier("public",?method).
+
+

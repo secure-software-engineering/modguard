@@ -1,0 +1,28 @@
+#!/bin/bash
+
+version=$1
+
+
+if [[ -n "$version" ]]; then
+    echo "$1"
+    if [ $version == 9 ]; then
+    	echo "java 9 selected"
+    	update-alternatives --set java /opt/jdk-9/bin/java
+    	update-alternatives --set javac /opt/jdk-9/bin/javac
+    	update-alternatives --set javaws /opt/jdk-9/bin/javaws
+    	update-alternatives --set jar /opt/jdk-9/bin/jar
+    	update-alternatives --set javap /opt/jdk-9/bin/javap
+	    update-alternatives --set jdeps /opt/jdk-9/bin/jdeps
+    fi
+    if [ $version == 8 ]; then
+    	echo "java 8 selected"
+    	update-alternatives --set java /opt/jdk1.8.0_161/bin/java
+    	update-alternatives --set javac /opt/jdk1.8.0_161/bin/javac
+    #	update-alternatives --set javaws /opt/jdk1.8.0_161/bin/javaws
+    	update-alternatives --set jar /opt/jdk1.8.0_161/bin/jar
+    	update-alternatives --set javap /opt/jdk1.8.0_161/bin/javap
+    #	update-alternatives --set jdeps /opt/jdk1.8.0_161/bin/jdeps
+    fi
+else
+    echo "argument error"
+fi

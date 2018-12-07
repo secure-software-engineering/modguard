@@ -1,0 +1,697 @@
+################################
+################################
+-- Classes -- 
+-- Fields -- 
+-- Methods -- 
+<org.apache.catalina.session.StandardSession: javax.servlet.http.HttpSessionContext sessionContext>, *18, null_type, org.apache.catalina.ha.session.DeltaSession::: (Mock)
+<org.apache.catalina.tribes.group.GroupChannel: org.apache.catalina.tribes.group.GroupChannel$HeartbeatThread hbthread>, *18, null_type, <<null pseudo heap>>
+Classes: 34
+Fields: 2
+Methods: 652
+null_type, org.apache.catalina.ContainerServlet, <<null pseudo heap>>
+null_type, org.apache.catalina.core.ApplicationContextFacade, <<null pseudo heap>>
+null_type, org.apache.catalina.core.ApplicationHttpRequest, <<null pseudo heap>>
+null_type, org.apache.catalina.core.ApplicationHttpResponse, <<null pseudo heap>>
+null_type, org.apache.catalina.core.ApplicationRequest, <<null pseudo heap>>
+null_type, org.apache.catalina.core.ApplicationResponse, <<null pseudo heap>>
+null_type, org.apache.catalina.loader.WebappClassLoaderBase, <<null pseudo heap>>
+null_type, org.apache.catalina.startup.Bootstrap, <<null pseudo heap>>
+null_type, org.apache.catalina.util.Introspection, <<null pseudo heap>>
+null_type, org.apache.catalina.webresources.JarWarResourceSet, <<null pseudo heap>>
+null_type, org.apache.coyote.AsyncStateMachine, <<null pseudo heap>>
+null_type, org.apache.coyote.http11.upgrade.InternalHttpUpgradeHandler, <<null pseudo heap>>
+null_type, org.apache.coyote.http11.upgrade.UpgradeProcessorInternal, <<null pseudo heap>>
+null_type, org.apache.coyote.InputBuffer, <<null pseudo heap>>
+null_type, org.apache.coyote.OutputBuffer, <<null pseudo heap>>
+null_type, org.apache.coyote.Request, <<null pseudo heap>>
+null_type, org.apache.tomcat.util.buf.UEncoder, <<null pseudo heap>>
+null_type, org.apache.tomcat.util.http.fileupload.IOUtils, <<null pseudo heap>>
+null_type, org.apache.tomcat.util.modeler.Registry, <<null pseudo heap>>
+org.apache.catalina.authenticator.SingleSignOn, <org.apache.catalina.util.LifecycleBase: java.lang.String getStateName()>, org.apache.catalina.authenticator.SingleSignOn::: (Mock)
+org.apache.catalina.authenticator.SingleSignOn, <org.apache.catalina.util.LifecycleBase: org.apache.catalina.LifecycleState getState()>, org.apache.catalina.authenticator.SingleSignOn::: (Mock)
+org.apache.catalina.authenticator.SingleSignOn, <org.apache.catalina.util.LifecycleBase: void setState(org.apache.catalina.LifecycleState)>, org.apache.catalina.authenticator.SingleSignOn::: (Mock)
+org.apache.catalina.authenticator.SingleSignOn, <org.apache.catalina.util.LifecycleBase: void setState(org.apache.catalina.LifecycleState,java.lang.Object)>, org.apache.catalina.authenticator.SingleSignOn::: (Mock)
+org.apache.catalina.authenticator.SingleSignOn, <org.apache.catalina.util.LifecycleMBeanBase: java.lang.String getDomain()>, org.apache.catalina.authenticator.SingleSignOn::: (Mock)
+org.apache.catalina.authenticator.SingleSignOn, <org.apache.catalina.util.LifecycleMBeanBase: void setDomain(java.lang.String)>, org.apache.catalina.authenticator.SingleSignOn::: (Mock)
+org.apache.catalina.authenticator.SingleSignOn, <org.apache.catalina.valves.ValveBase: java.lang.String getDomainInternal()>, org.apache.catalina.authenticator.SingleSignOn::: (Mock)
+org.apache.catalina.authenticator.SingleSignOn, <org.apache.catalina.valves.ValveBase: java.lang.String getObjectNameKeyProperties()>, org.apache.catalina.authenticator.SingleSignOn::: (Mock)
+org.apache.catalina.authenticator.SingleSignOn, <org.apache.catalina.valves.ValveBase: org.apache.catalina.Container getContainer()>, org.apache.catalina.authenticator.SingleSignOn::: (Mock)
+org.apache.catalina.authenticator.SingleSignOn, <org.apache.catalina.valves.ValveBase: org.apache.catalina.Valve getNext()>, org.apache.catalina.authenticator.SingleSignOn::: (Mock)
+org.apache.catalina.authenticator.SingleSignOn, <org.apache.catalina.valves.ValveBase: void setAsyncSupported(boolean)>, org.apache.catalina.authenticator.SingleSignOn::: (Mock)
+org.apache.catalina.authenticator.SingleSignOn, <org.apache.catalina.valves.ValveBase: void setContainer(org.apache.catalina.Container)>, org.apache.catalina.authenticator.SingleSignOn::: (Mock)
+org.apache.catalina.authenticator.SingleSignOn, <org.apache.catalina.valves.ValveBase: void setNext(org.apache.catalina.Valve)>, org.apache.catalina.authenticator.SingleSignOn::: (Mock)
+org.apache.catalina.core.AccessLogAdapter, org.apache.catalina.AccessLog, <org.apache.catalina.core.ContainerBase: org.apache.catalina.AccessLog getAccessLog()>/new org.apache.catalina.core.AccessLogAdapter/0
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.ContainerBase: boolean getStartChildren()>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.ContainerBase: int getBackgroundProcessorDelay()>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.ContainerBase: int getStartStopThreads()>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.ContainerBase: java.lang.String getLogName()>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.ContainerBase: java.lang.String getMBeanKeyProperties()>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.ContainerBase: java.lang.String getName()>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.ContainerBase: org.apache.catalina.AccessLog getAccessLog()>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.ContainerBase: org.apache.catalina.Cluster getCluster()>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.ContainerBase: org.apache.catalina.Container getParent()>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.ContainerBase: org.apache.catalina.Pipeline getPipeline()>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.ContainerBase: org.apache.catalina.Realm getRealm()>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.ContainerBase: org.apache.juli.logging.Log getLogger()>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.ContainerBase: void setBackgroundProcessorDelay(int)>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.ContainerBase: void setCluster(org.apache.catalina.Cluster)>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.ContainerBase: void setName(java.lang.String)>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.ContainerBase: void setParent(org.apache.catalina.Container)>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.ContainerBase: void setRealm(org.apache.catalina.Realm)>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.ContainerBase: void setStartChildren(boolean)>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.ContainerBase: void setStartStopThreads(int)>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: boolean getAddWebinfClassesResources()>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: boolean getAllowCasualMultipartParsing()>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: boolean getAntiResourceLocking()>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: boolean getClearReferencesHttpClientKeepAliveThread()>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: boolean getClearReferencesRmiTargets()>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: boolean getClearReferencesStopThreads()>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: boolean getClearReferencesStopTimerThreads()>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: boolean getConfigured()>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: boolean getCookies()>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: boolean getCopyXML()>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: boolean getCrossContext()>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: boolean getDelegate()>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: boolean getDenyUncoveredHttpMethods()>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: boolean getDispatchersUseEncodedPaths()>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: boolean getDistributable()>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: boolean getFireRequestListenersOnForwards()>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: boolean getIgnoreAnnotations()>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: boolean getJndiExceptionOnFailedWrite()>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: boolean getLogEffectiveWebXml()>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: boolean getMapperContextRootRedirectEnabled()>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: boolean getMapperDirectoryRedirectEnabled()>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: boolean getOverride()>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: boolean getPaused()>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: boolean getPreemptiveAuthentication()>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: boolean getPrivileged()>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: boolean getReloadable()>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: boolean getRenewThreadsWhenStoppingContext()>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: boolean getSendRedirectBody()>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: boolean getSessionCookiePathUsesTrailingSlash()>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: boolean getSwallowAbortedUploads()>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: boolean getSwallowOutput()>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: boolean getTldValidation()>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: boolean getUnpackWAR()>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: boolean getUseHttpOnly()>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: boolean getUseRelativeRedirects()>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: boolean getValidateClientProvidedNewSessionId()>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: boolean getXmlBlockExternal()>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: boolean getXmlNamespaceAware()>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: boolean getXmlValidation()>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: int getEffectiveMajorVersion()>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: int getEffectiveMinorVersion()>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: int getErrorCount()>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: int getRequestCount()>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: int getSessionTimeout()>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: java.lang.Boolean getFailCtxIfServletStartFails()>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: java.lang.Object getNamingToken()>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: java.lang.Object[] getApplicationEventListeners()>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: java.lang.Object[] getApplicationLifecycleListeners()>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: java.lang.String getAltDDName()>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: java.lang.String getBaseName()>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: java.lang.String getCharsetMapperClass()>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: java.lang.String getContainerSciFilter()>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: java.lang.String getDefaultContextXml()>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: java.lang.String getDefaultWebXml()>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: java.lang.String getDisplayName()>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: java.lang.String getDocBase()>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: java.lang.String getEncodedPath()>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: java.lang.String getJ2EEApplication()>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: java.lang.String getJ2EEServer()>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: java.lang.String getOriginalDocBase()>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: java.lang.String getPath()>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: java.lang.String getPublicId()>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: java.lang.String getRealPath(java.lang.String)>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: java.lang.String getRequestCharacterEncoding()>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: java.lang.String getResourceOnlyServlets()>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: java.lang.String getResponseCharacterEncoding()>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: java.lang.String getServer()>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: java.lang.String getSessionCookieDomain()>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: java.lang.String getSessionCookieName()>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: java.lang.String getSessionCookiePath()>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: java.lang.String getWebappVersion()>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: java.lang.String getWorkDir()>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: java.lang.String getWorkPath()>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: java.lang.String getWrapperClass()>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: java.lang.String setServer(java.lang.String)>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: java.lang.String[] getJavaVMs()>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: java.lang.String[] getWelcomeFiles()>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: java.lang.String[] setJavaVMs(java.lang.String[])>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: long getMaxTime()>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: long getMinTime()>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: long getProcessingTime()>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: long getStartTime()>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: long getStartupTime()>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: long getTldScanTime()>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: long getUnloadDelay()>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: org.apache.catalina.Authenticator getAuthenticator()>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: org.apache.catalina.core.NamingContextListener getNamingContextListener()>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: org.apache.catalina.deploy.NamingResourcesImpl getNamingResources()>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: org.apache.catalina.Loader getLoader()>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: org.apache.catalina.Manager getManager()>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: org.apache.catalina.ThreadBindingListener getThreadBindingListener()>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: org.apache.catalina.util.CharsetMapper getCharsetMapper()>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: org.apache.catalina.WebResourceRoot getResources()>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: org.apache.tomcat.InstanceManager getInstanceManager()>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: org.apache.tomcat.JarScanner getJarScanner()>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: org.apache.tomcat.util.descriptor.web.LoginConfig getLoginConfig()>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: org.apache.tomcat.util.http.CookieProcessor getCookieProcessor()>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: void setAddWebinfClassesResources(boolean)>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: void setAllowCasualMultipartParsing(boolean)>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: void setAltDDName(java.lang.String)>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: void setAntiResourceLocking(boolean)>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: void setApplicationEventListeners(java.lang.Object[])>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: void setApplicationLifecycleListeners(java.lang.Object[])>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: void setCharsetMapper(org.apache.catalina.util.CharsetMapper)>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: void setCharsetMapperClass(java.lang.String)>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: void setClearReferencesHttpClientKeepAliveThread(boolean)>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: void setClearReferencesRmiTargets(boolean)>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: void setClearReferencesStopThreads(boolean)>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: void setClearReferencesStopTimerThreads(boolean)>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: void setConfigured(boolean)>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: void setContainerSciFilter(java.lang.String)>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: void setCookieProcessor(org.apache.tomcat.util.http.CookieProcessor)>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: void setCookies(boolean)>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: void setCopyXML(boolean)>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: void setCrossContext(boolean)>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: void setDefaultContextXml(java.lang.String)>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: void setDefaultWebXml(java.lang.String)>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: void setDelegate(boolean)>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: void setDenyUncoveredHttpMethods(boolean)>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: void setDispatchersUseEncodedPaths(boolean)>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: void setDisplayName(java.lang.String)>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: void setDistributable(boolean)>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: void setDocBase(java.lang.String)>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: void setEffectiveMajorVersion(int)>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: void setEffectiveMinorVersion(int)>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: void setFailCtxIfServletStartFails(java.lang.Boolean)>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: void setFireRequestListenersOnForwards(boolean)>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: void setIgnoreAnnotations(boolean)>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: void setInstanceManager(org.apache.tomcat.InstanceManager)>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: void setJ2EEApplication(java.lang.String)>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: void setJ2EEServer(java.lang.String)>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: void setJarScanner(org.apache.tomcat.JarScanner)>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: void setJndiExceptionOnFailedWrite(boolean)>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: void setLoader(org.apache.catalina.Loader)>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: void setLogEffectiveWebXml(boolean)>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: void setLoginConfig(org.apache.tomcat.util.descriptor.web.LoginConfig)>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: void setManager(org.apache.catalina.Manager)>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: void setMapperContextRootRedirectEnabled(boolean)>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: void setMapperDirectoryRedirectEnabled(boolean)>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: void setNamingContextListener(org.apache.catalina.core.NamingContextListener)>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: void setNamingResources(org.apache.catalina.deploy.NamingResourcesImpl)>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: void setOriginalDocBase(java.lang.String)>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: void setOverride(boolean)>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: void setPath(java.lang.String)>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: void setPreemptiveAuthentication(boolean)>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: void setPrivileged(boolean)>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: void setPublicId(java.lang.String)>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: void setReloadable(boolean)>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: void setRenewThreadsWhenStoppingContext(boolean)>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: void setReplaceWelcomeFiles(boolean)>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: void setRequestCharacterEncoding(java.lang.String)>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: void setResourceOnlyServlets(java.lang.String)>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: void setResources(org.apache.catalina.WebResourceRoot)>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: void setResponseCharacterEncoding(java.lang.String)>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: void setSendRedirectBody(boolean)>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: void setSessionCookieDomain(java.lang.String)>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: void setSessionCookieName(java.lang.String)>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: void setSessionCookiePath(java.lang.String)>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: void setSessionCookiePathUsesTrailingSlash(boolean)>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: void setSessionTimeout(int)>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: void setStartupTime(long)>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: void setSwallowAbortedUploads(boolean)>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: void setSwallowOutput(boolean)>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: void setThreadBindingListener(org.apache.catalina.ThreadBindingListener)>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: void setTldScanTime(long)>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: void setTldValidation(boolean)>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: void setUnloadDelay(long)>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: void setUnpackWAR(boolean)>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: void setUseHttpOnly(boolean)>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: void setUseNaming(boolean)>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: void setUseRelativeRedirects(boolean)>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: void setValidateClientProvidedNewSessionId(boolean)>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: void setWebappVersion(java.lang.String)>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: void setWorkDir(java.lang.String)>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: void setWrapperClass(java.lang.String)>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: void setXmlBlockExternal(boolean)>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: void setXmlNamespaceAware(boolean)>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.core.StandardContext: void setXmlValidation(boolean)>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.util.LifecycleBase: java.lang.String getStateName()>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.util.LifecycleBase: org.apache.catalina.LifecycleState getState()>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.util.LifecycleBase: void setState(org.apache.catalina.LifecycleState)>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.util.LifecycleBase: void setState(org.apache.catalina.LifecycleState,java.lang.Object)>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.util.LifecycleMBeanBase: java.lang.String getDomain()>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContext, <org.apache.catalina.util.LifecycleMBeanBase: void setDomain(java.lang.String)>, org.apache.catalina.core.StandardContext::: (Mock)
+org.apache.catalina.core.StandardContextValve, <org.apache.catalina.util.LifecycleBase: java.lang.String getStateName()>, <org.apache.catalina.core.StandardContext: void <init>()>/new org.apache.catalina.core.StandardContextValve/0
+org.apache.catalina.core.StandardContextValve, <org.apache.catalina.util.LifecycleBase: org.apache.catalina.LifecycleState getState()>, <org.apache.catalina.core.StandardContext: void <init>()>/new org.apache.catalina.core.StandardContextValve/0
+org.apache.catalina.core.StandardContextValve, <org.apache.catalina.util.LifecycleBase: void setState(org.apache.catalina.LifecycleState)>, <org.apache.catalina.core.StandardContext: void <init>()>/new org.apache.catalina.core.StandardContextValve/0
+org.apache.catalina.core.StandardContextValve, <org.apache.catalina.util.LifecycleBase: void setState(org.apache.catalina.LifecycleState,java.lang.Object)>, <org.apache.catalina.core.StandardContext: void <init>()>/new org.apache.catalina.core.StandardContextValve/0
+org.apache.catalina.core.StandardContextValve, <org.apache.catalina.util.LifecycleMBeanBase: java.lang.String getDomain()>, <org.apache.catalina.core.StandardContext: void <init>()>/new org.apache.catalina.core.StandardContextValve/0
+org.apache.catalina.core.StandardContextValve, <org.apache.catalina.util.LifecycleMBeanBase: void setDomain(java.lang.String)>, <org.apache.catalina.core.StandardContext: void <init>()>/new org.apache.catalina.core.StandardContextValve/0
+org.apache.catalina.core.StandardContextValve, <org.apache.catalina.valves.ValveBase: java.lang.String getDomainInternal()>, <org.apache.catalina.core.StandardContext: void <init>()>/new org.apache.catalina.core.StandardContextValve/0
+org.apache.catalina.core.StandardContextValve, <org.apache.catalina.valves.ValveBase: java.lang.String getObjectNameKeyProperties()>, <org.apache.catalina.core.StandardContext: void <init>()>/new org.apache.catalina.core.StandardContextValve/0
+org.apache.catalina.core.StandardContextValve, <org.apache.catalina.valves.ValveBase: org.apache.catalina.Container getContainer()>, <org.apache.catalina.core.StandardContext: void <init>()>/new org.apache.catalina.core.StandardContextValve/0
+org.apache.catalina.core.StandardContextValve, <org.apache.catalina.valves.ValveBase: org.apache.catalina.Valve getNext()>, <org.apache.catalina.core.StandardContext: void <init>()>/new org.apache.catalina.core.StandardContextValve/0
+org.apache.catalina.core.StandardContextValve, <org.apache.catalina.valves.ValveBase: void setAsyncSupported(boolean)>, <org.apache.catalina.core.StandardContext: void <init>()>/new org.apache.catalina.core.StandardContextValve/0
+org.apache.catalina.core.StandardContextValve, <org.apache.catalina.valves.ValveBase: void setContainer(org.apache.catalina.Container)>, <org.apache.catalina.core.StandardContext: void <init>()>/new org.apache.catalina.core.StandardContextValve/0
+org.apache.catalina.core.StandardContextValve, <org.apache.catalina.valves.ValveBase: void setNext(org.apache.catalina.Valve)>, <org.apache.catalina.core.StandardContext: void <init>()>/new org.apache.catalina.core.StandardContextValve/0
+org.apache.catalina.core.StandardEngine, <org.apache.catalina.core.ContainerBase: boolean getStartChildren()>, org.apache.catalina.core.StandardEngine::: (Mock)
+org.apache.catalina.core.StandardEngine, <org.apache.catalina.core.ContainerBase: int getBackgroundProcessorDelay()>, org.apache.catalina.core.StandardEngine::: (Mock)
+org.apache.catalina.core.StandardEngine, <org.apache.catalina.core.ContainerBase: int getStartStopThreads()>, org.apache.catalina.core.StandardEngine::: (Mock)
+org.apache.catalina.core.StandardEngine, <org.apache.catalina.core.ContainerBase: java.lang.String getLogName()>, org.apache.catalina.core.StandardEngine::: (Mock)
+org.apache.catalina.core.StandardEngine, <org.apache.catalina.core.ContainerBase: java.lang.String getMBeanKeyProperties()>, org.apache.catalina.core.StandardEngine::: (Mock)
+org.apache.catalina.core.StandardEngine, <org.apache.catalina.core.ContainerBase: java.lang.String getName()>, org.apache.catalina.core.StandardEngine::: (Mock)
+org.apache.catalina.core.StandardEngine, <org.apache.catalina.core.ContainerBase: org.apache.catalina.AccessLog getAccessLog()>, org.apache.catalina.core.StandardEngine::: (Mock)
+org.apache.catalina.core.StandardEngine, <org.apache.catalina.core.ContainerBase: org.apache.catalina.Cluster getCluster()>, org.apache.catalina.core.StandardEngine::: (Mock)
+org.apache.catalina.core.StandardEngine, <org.apache.catalina.core.ContainerBase: org.apache.catalina.Container getParent()>, org.apache.catalina.core.StandardEngine::: (Mock)
+org.apache.catalina.core.StandardEngine, <org.apache.catalina.core.ContainerBase: org.apache.catalina.Pipeline getPipeline()>, org.apache.catalina.core.StandardEngine::: (Mock)
+org.apache.catalina.core.StandardEngine, <org.apache.catalina.core.ContainerBase: org.apache.catalina.Realm getRealm()>, org.apache.catalina.core.StandardEngine::: (Mock)
+org.apache.catalina.core.StandardEngine, <org.apache.catalina.core.ContainerBase: org.apache.juli.logging.Log getLogger()>, org.apache.catalina.core.StandardEngine::: (Mock)
+org.apache.catalina.core.StandardEngine, <org.apache.catalina.core.ContainerBase: void setBackgroundProcessorDelay(int)>, org.apache.catalina.core.StandardEngine::: (Mock)
+org.apache.catalina.core.StandardEngine, <org.apache.catalina.core.ContainerBase: void setCluster(org.apache.catalina.Cluster)>, org.apache.catalina.core.StandardEngine::: (Mock)
+org.apache.catalina.core.StandardEngine, <org.apache.catalina.core.ContainerBase: void setName(java.lang.String)>, org.apache.catalina.core.StandardEngine::: (Mock)
+org.apache.catalina.core.StandardEngine, <org.apache.catalina.core.ContainerBase: void setParent(org.apache.catalina.Container)>, org.apache.catalina.core.StandardEngine::: (Mock)
+org.apache.catalina.core.StandardEngine, <org.apache.catalina.core.ContainerBase: void setRealm(org.apache.catalina.Realm)>, org.apache.catalina.core.StandardEngine::: (Mock)
+org.apache.catalina.core.StandardEngine, <org.apache.catalina.core.ContainerBase: void setStartChildren(boolean)>, org.apache.catalina.core.StandardEngine::: (Mock)
+org.apache.catalina.core.StandardEngine, <org.apache.catalina.core.ContainerBase: void setStartStopThreads(int)>, org.apache.catalina.core.StandardEngine::: (Mock)
+org.apache.catalina.core.StandardEngine, <org.apache.catalina.core.StandardEngine: java.lang.String getDefaultHost()>, org.apache.catalina.core.StandardEngine::: (Mock)
+org.apache.catalina.core.StandardEngine, <org.apache.catalina.core.StandardEngine: java.lang.String getJvmRoute()>, org.apache.catalina.core.StandardEngine::: (Mock)
+org.apache.catalina.core.StandardEngine, <org.apache.catalina.core.StandardEngine: org.apache.catalina.Realm getRealm()>, org.apache.catalina.core.StandardEngine::: (Mock)
+org.apache.catalina.core.StandardEngine, <org.apache.catalina.core.StandardEngine: org.apache.catalina.Service getService()>, org.apache.catalina.core.StandardEngine::: (Mock)
+org.apache.catalina.core.StandardEngine, <org.apache.catalina.core.StandardEngine: void setDefaultHost(java.lang.String)>, org.apache.catalina.core.StandardEngine::: (Mock)
+org.apache.catalina.core.StandardEngine, <org.apache.catalina.core.StandardEngine: void setJvmRoute(java.lang.String)>, org.apache.catalina.core.StandardEngine::: (Mock)
+org.apache.catalina.core.StandardEngine, <org.apache.catalina.core.StandardEngine: void setParent(org.apache.catalina.Container)>, org.apache.catalina.core.StandardEngine::: (Mock)
+org.apache.catalina.core.StandardEngine, <org.apache.catalina.core.StandardEngine: void setService(org.apache.catalina.Service)>, org.apache.catalina.core.StandardEngine::: (Mock)
+org.apache.catalina.core.StandardEngine, <org.apache.catalina.util.LifecycleBase: java.lang.String getStateName()>, org.apache.catalina.core.StandardEngine::: (Mock)
+org.apache.catalina.core.StandardEngine, <org.apache.catalina.util.LifecycleBase: org.apache.catalina.LifecycleState getState()>, org.apache.catalina.core.StandardEngine::: (Mock)
+org.apache.catalina.core.StandardEngine, <org.apache.catalina.util.LifecycleBase: void setState(org.apache.catalina.LifecycleState)>, org.apache.catalina.core.StandardEngine::: (Mock)
+org.apache.catalina.core.StandardEngine, <org.apache.catalina.util.LifecycleBase: void setState(org.apache.catalina.LifecycleState,java.lang.Object)>, org.apache.catalina.core.StandardEngine::: (Mock)
+org.apache.catalina.core.StandardEngine, <org.apache.catalina.util.LifecycleMBeanBase: java.lang.String getDomain()>, org.apache.catalina.core.StandardEngine::: (Mock)
+org.apache.catalina.core.StandardEngine, <org.apache.catalina.util.LifecycleMBeanBase: void setDomain(java.lang.String)>, org.apache.catalina.core.StandardEngine::: (Mock)
+org.apache.catalina.core.StandardEngineValve, <org.apache.catalina.util.LifecycleBase: java.lang.String getStateName()>, <org.apache.catalina.core.StandardEngine: void <init>()>/new org.apache.catalina.core.StandardEngineValve/0
+org.apache.catalina.core.StandardEngineValve, <org.apache.catalina.util.LifecycleBase: org.apache.catalina.LifecycleState getState()>, <org.apache.catalina.core.StandardEngine: void <init>()>/new org.apache.catalina.core.StandardEngineValve/0
+org.apache.catalina.core.StandardEngineValve, <org.apache.catalina.util.LifecycleBase: void setState(org.apache.catalina.LifecycleState)>, <org.apache.catalina.core.StandardEngine: void <init>()>/new org.apache.catalina.core.StandardEngineValve/0
+org.apache.catalina.core.StandardEngineValve, <org.apache.catalina.util.LifecycleBase: void setState(org.apache.catalina.LifecycleState,java.lang.Object)>, <org.apache.catalina.core.StandardEngine: void <init>()>/new org.apache.catalina.core.StandardEngineValve/0
+org.apache.catalina.core.StandardEngineValve, <org.apache.catalina.util.LifecycleMBeanBase: java.lang.String getDomain()>, <org.apache.catalina.core.StandardEngine: void <init>()>/new org.apache.catalina.core.StandardEngineValve/0
+org.apache.catalina.core.StandardEngineValve, <org.apache.catalina.util.LifecycleMBeanBase: void setDomain(java.lang.String)>, <org.apache.catalina.core.StandardEngine: void <init>()>/new org.apache.catalina.core.StandardEngineValve/0
+org.apache.catalina.core.StandardEngineValve, <org.apache.catalina.valves.ValveBase: java.lang.String getDomainInternal()>, <org.apache.catalina.core.StandardEngine: void <init>()>/new org.apache.catalina.core.StandardEngineValve/0
+org.apache.catalina.core.StandardEngineValve, <org.apache.catalina.valves.ValveBase: java.lang.String getObjectNameKeyProperties()>, <org.apache.catalina.core.StandardEngine: void <init>()>/new org.apache.catalina.core.StandardEngineValve/0
+org.apache.catalina.core.StandardEngineValve, <org.apache.catalina.valves.ValveBase: org.apache.catalina.Container getContainer()>, <org.apache.catalina.core.StandardEngine: void <init>()>/new org.apache.catalina.core.StandardEngineValve/0
+org.apache.catalina.core.StandardEngineValve, <org.apache.catalina.valves.ValveBase: org.apache.catalina.Valve getNext()>, <org.apache.catalina.core.StandardEngine: void <init>()>/new org.apache.catalina.core.StandardEngineValve/0
+org.apache.catalina.core.StandardEngineValve, <org.apache.catalina.valves.ValveBase: void setAsyncSupported(boolean)>, <org.apache.catalina.core.StandardEngine: void <init>()>/new org.apache.catalina.core.StandardEngineValve/0
+org.apache.catalina.core.StandardEngineValve, <org.apache.catalina.valves.ValveBase: void setContainer(org.apache.catalina.Container)>, <org.apache.catalina.core.StandardEngine: void <init>()>/new org.apache.catalina.core.StandardEngineValve/0
+org.apache.catalina.core.StandardEngineValve, <org.apache.catalina.valves.ValveBase: void setNext(org.apache.catalina.Valve)>, <org.apache.catalina.core.StandardEngine: void <init>()>/new org.apache.catalina.core.StandardEngineValve/0
+org.apache.catalina.core.StandardHost, <org.apache.catalina.core.ContainerBase: boolean getStartChildren()>, org.apache.catalina.core.StandardHost::: (Mock)
+org.apache.catalina.core.StandardHost, <org.apache.catalina.core.ContainerBase: int getBackgroundProcessorDelay()>, org.apache.catalina.core.StandardHost::: (Mock)
+org.apache.catalina.core.StandardHost, <org.apache.catalina.core.ContainerBase: int getStartStopThreads()>, org.apache.catalina.core.StandardHost::: (Mock)
+org.apache.catalina.core.StandardHost, <org.apache.catalina.core.ContainerBase: java.lang.String getLogName()>, org.apache.catalina.core.StandardHost::: (Mock)
+org.apache.catalina.core.StandardHost, <org.apache.catalina.core.ContainerBase: java.lang.String getMBeanKeyProperties()>, org.apache.catalina.core.StandardHost::: (Mock)
+org.apache.catalina.core.StandardHost, <org.apache.catalina.core.ContainerBase: java.lang.String getName()>, org.apache.catalina.core.StandardHost::: (Mock)
+org.apache.catalina.core.StandardHost, <org.apache.catalina.core.ContainerBase: org.apache.catalina.AccessLog getAccessLog()>, org.apache.catalina.core.StandardHost::: (Mock)
+org.apache.catalina.core.StandardHost, <org.apache.catalina.core.ContainerBase: org.apache.catalina.Cluster getCluster()>, org.apache.catalina.core.StandardHost::: (Mock)
+org.apache.catalina.core.StandardHost, <org.apache.catalina.core.ContainerBase: org.apache.catalina.Container getParent()>, org.apache.catalina.core.StandardHost::: (Mock)
+org.apache.catalina.core.StandardHost, <org.apache.catalina.core.ContainerBase: org.apache.catalina.Pipeline getPipeline()>, org.apache.catalina.core.StandardHost::: (Mock)
+org.apache.catalina.core.StandardHost, <org.apache.catalina.core.ContainerBase: org.apache.catalina.Realm getRealm()>, org.apache.catalina.core.StandardHost::: (Mock)
+org.apache.catalina.core.StandardHost, <org.apache.catalina.core.ContainerBase: org.apache.juli.logging.Log getLogger()>, org.apache.catalina.core.StandardHost::: (Mock)
+org.apache.catalina.core.StandardHost, <org.apache.catalina.core.ContainerBase: void setBackgroundProcessorDelay(int)>, org.apache.catalina.core.StandardHost::: (Mock)
+org.apache.catalina.core.StandardHost, <org.apache.catalina.core.ContainerBase: void setCluster(org.apache.catalina.Cluster)>, org.apache.catalina.core.StandardHost::: (Mock)
+org.apache.catalina.core.StandardHost, <org.apache.catalina.core.ContainerBase: void setName(java.lang.String)>, org.apache.catalina.core.StandardHost::: (Mock)
+org.apache.catalina.core.StandardHost, <org.apache.catalina.core.ContainerBase: void setParent(org.apache.catalina.Container)>, org.apache.catalina.core.StandardHost::: (Mock)
+org.apache.catalina.core.StandardHost, <org.apache.catalina.core.ContainerBase: void setRealm(org.apache.catalina.Realm)>, org.apache.catalina.core.StandardHost::: (Mock)
+org.apache.catalina.core.StandardHost, <org.apache.catalina.core.ContainerBase: void setStartChildren(boolean)>, org.apache.catalina.core.StandardHost::: (Mock)
+org.apache.catalina.core.StandardHost, <org.apache.catalina.core.ContainerBase: void setStartStopThreads(int)>, org.apache.catalina.core.StandardHost::: (Mock)
+org.apache.catalina.core.StandardHost, <org.apache.catalina.core.StandardHost: boolean getAutoDeploy()>, org.apache.catalina.core.StandardHost::: (Mock)
+org.apache.catalina.core.StandardHost, <org.apache.catalina.core.StandardHost: boolean getCreateDirs()>, org.apache.catalina.core.StandardHost::: (Mock)
+org.apache.catalina.core.StandardHost, <org.apache.catalina.core.StandardHost: boolean getDeployOnStartup()>, org.apache.catalina.core.StandardHost::: (Mock)
+org.apache.catalina.core.StandardHost, <org.apache.catalina.core.StandardHost: boolean getUndeployOldVersions()>, org.apache.catalina.core.StandardHost::: (Mock)
+org.apache.catalina.core.StandardHost, <org.apache.catalina.core.StandardHost: java.lang.String getAppBase()>, org.apache.catalina.core.StandardHost::: (Mock)
+org.apache.catalina.core.StandardHost, <org.apache.catalina.core.StandardHost: java.lang.String getConfigClass()>, org.apache.catalina.core.StandardHost::: (Mock)
+org.apache.catalina.core.StandardHost, <org.apache.catalina.core.StandardHost: java.lang.String getContextClass()>, org.apache.catalina.core.StandardHost::: (Mock)
+org.apache.catalina.core.StandardHost, <org.apache.catalina.core.StandardHost: java.lang.String getDeployIgnore()>, org.apache.catalina.core.StandardHost::: (Mock)
+org.apache.catalina.core.StandardHost, <org.apache.catalina.core.StandardHost: java.lang.String getErrorReportValveClass()>, org.apache.catalina.core.StandardHost::: (Mock)
+org.apache.catalina.core.StandardHost, <org.apache.catalina.core.StandardHost: java.lang.String getName()>, org.apache.catalina.core.StandardHost::: (Mock)
+org.apache.catalina.core.StandardHost, <org.apache.catalina.core.StandardHost: java.lang.String getWorkDir()>, org.apache.catalina.core.StandardHost::: (Mock)
+org.apache.catalina.core.StandardHost, <org.apache.catalina.core.StandardHost: java.lang.String getXmlBase()>, org.apache.catalina.core.StandardHost::: (Mock)
+org.apache.catalina.core.StandardHost, <org.apache.catalina.core.StandardHost: java.lang.String[] getAliases()>, org.apache.catalina.core.StandardHost::: (Mock)
+org.apache.catalina.core.StandardHost, <org.apache.catalina.core.StandardHost: java.lang.String[] getValveNames()>, org.apache.catalina.core.StandardHost::: (Mock)
+org.apache.catalina.core.StandardHost, <org.apache.catalina.core.StandardHost: void setAppBase(java.lang.String)>, org.apache.catalina.core.StandardHost::: (Mock)
+org.apache.catalina.core.StandardHost, <org.apache.catalina.core.StandardHost: void setAutoDeploy(boolean)>, org.apache.catalina.core.StandardHost::: (Mock)
+org.apache.catalina.core.StandardHost, <org.apache.catalina.core.StandardHost: void setConfigClass(java.lang.String)>, org.apache.catalina.core.StandardHost::: (Mock)
+org.apache.catalina.core.StandardHost, <org.apache.catalina.core.StandardHost: void setContextClass(java.lang.String)>, org.apache.catalina.core.StandardHost::: (Mock)
+org.apache.catalina.core.StandardHost, <org.apache.catalina.core.StandardHost: void setCopyXML(boolean)>, org.apache.catalina.core.StandardHost::: (Mock)
+org.apache.catalina.core.StandardHost, <org.apache.catalina.core.StandardHost: void setCreateDirs(boolean)>, org.apache.catalina.core.StandardHost::: (Mock)
+org.apache.catalina.core.StandardHost, <org.apache.catalina.core.StandardHost: void setDeployIgnore(java.lang.String)>, org.apache.catalina.core.StandardHost::: (Mock)
+org.apache.catalina.core.StandardHost, <org.apache.catalina.core.StandardHost: void setDeployOnStartup(boolean)>, org.apache.catalina.core.StandardHost::: (Mock)
+org.apache.catalina.core.StandardHost, <org.apache.catalina.core.StandardHost: void setDeployXML(boolean)>, org.apache.catalina.core.StandardHost::: (Mock)
+org.apache.catalina.core.StandardHost, <org.apache.catalina.core.StandardHost: void setErrorReportValveClass(java.lang.String)>, org.apache.catalina.core.StandardHost::: (Mock)
+org.apache.catalina.core.StandardHost, <org.apache.catalina.core.StandardHost: void setFailCtxIfServletStartFails(boolean)>, org.apache.catalina.core.StandardHost::: (Mock)
+org.apache.catalina.core.StandardHost, <org.apache.catalina.core.StandardHost: void setName(java.lang.String)>, org.apache.catalina.core.StandardHost::: (Mock)
+org.apache.catalina.core.StandardHost, <org.apache.catalina.core.StandardHost: void setUndeployOldVersions(boolean)>, org.apache.catalina.core.StandardHost::: (Mock)
+org.apache.catalina.core.StandardHost, <org.apache.catalina.core.StandardHost: void setUnpackWARs(boolean)>, org.apache.catalina.core.StandardHost::: (Mock)
+org.apache.catalina.core.StandardHost, <org.apache.catalina.core.StandardHost: void setWorkDir(java.lang.String)>, org.apache.catalina.core.StandardHost::: (Mock)
+org.apache.catalina.core.StandardHost, <org.apache.catalina.core.StandardHost: void setXmlBase(java.lang.String)>, org.apache.catalina.core.StandardHost::: (Mock)
+org.apache.catalina.core.StandardHost, <org.apache.catalina.util.LifecycleBase: java.lang.String getStateName()>, org.apache.catalina.core.StandardHost::: (Mock)
+org.apache.catalina.core.StandardHost, <org.apache.catalina.util.LifecycleBase: org.apache.catalina.LifecycleState getState()>, org.apache.catalina.core.StandardHost::: (Mock)
+org.apache.catalina.core.StandardHost, <org.apache.catalina.util.LifecycleBase: void setState(org.apache.catalina.LifecycleState)>, org.apache.catalina.core.StandardHost::: (Mock)
+org.apache.catalina.core.StandardHost, <org.apache.catalina.util.LifecycleBase: void setState(org.apache.catalina.LifecycleState,java.lang.Object)>, org.apache.catalina.core.StandardHost::: (Mock)
+org.apache.catalina.core.StandardHost, <org.apache.catalina.util.LifecycleMBeanBase: java.lang.String getDomain()>, org.apache.catalina.core.StandardHost::: (Mock)
+org.apache.catalina.core.StandardHost, <org.apache.catalina.util.LifecycleMBeanBase: void setDomain(java.lang.String)>, org.apache.catalina.core.StandardHost::: (Mock)
+org.apache.catalina.core.StandardHostValve, <org.apache.catalina.util.LifecycleBase: java.lang.String getStateName()>, <org.apache.catalina.core.StandardHost: void <init>()>/new org.apache.catalina.core.StandardHostValve/0
+org.apache.catalina.core.StandardHostValve, <org.apache.catalina.util.LifecycleBase: org.apache.catalina.LifecycleState getState()>, <org.apache.catalina.core.StandardHost: void <init>()>/new org.apache.catalina.core.StandardHostValve/0
+org.apache.catalina.core.StandardHostValve, <org.apache.catalina.util.LifecycleBase: void setState(org.apache.catalina.LifecycleState)>, <org.apache.catalina.core.StandardHost: void <init>()>/new org.apache.catalina.core.StandardHostValve/0
+org.apache.catalina.core.StandardHostValve, <org.apache.catalina.util.LifecycleBase: void setState(org.apache.catalina.LifecycleState,java.lang.Object)>, <org.apache.catalina.core.StandardHost: void <init>()>/new org.apache.catalina.core.StandardHostValve/0
+org.apache.catalina.core.StandardHostValve, <org.apache.catalina.util.LifecycleMBeanBase: java.lang.String getDomain()>, <org.apache.catalina.core.StandardHost: void <init>()>/new org.apache.catalina.core.StandardHostValve/0
+org.apache.catalina.core.StandardHostValve, <org.apache.catalina.util.LifecycleMBeanBase: void setDomain(java.lang.String)>, <org.apache.catalina.core.StandardHost: void <init>()>/new org.apache.catalina.core.StandardHostValve/0
+org.apache.catalina.core.StandardHostValve, <org.apache.catalina.valves.ValveBase: java.lang.String getDomainInternal()>, <org.apache.catalina.core.StandardHost: void <init>()>/new org.apache.catalina.core.StandardHostValve/0
+org.apache.catalina.core.StandardHostValve, <org.apache.catalina.valves.ValveBase: java.lang.String getObjectNameKeyProperties()>, <org.apache.catalina.core.StandardHost: void <init>()>/new org.apache.catalina.core.StandardHostValve/0
+org.apache.catalina.core.StandardHostValve, <org.apache.catalina.valves.ValveBase: org.apache.catalina.Container getContainer()>, <org.apache.catalina.core.StandardHost: void <init>()>/new org.apache.catalina.core.StandardHostValve/0
+org.apache.catalina.core.StandardHostValve, <org.apache.catalina.valves.ValveBase: org.apache.catalina.Valve getNext()>, <org.apache.catalina.core.StandardHost: void <init>()>/new org.apache.catalina.core.StandardHostValve/0
+org.apache.catalina.core.StandardHostValve, <org.apache.catalina.valves.ValveBase: void setAsyncSupported(boolean)>, <org.apache.catalina.core.StandardHost: void <init>()>/new org.apache.catalina.core.StandardHostValve/0
+org.apache.catalina.core.StandardHostValve, <org.apache.catalina.valves.ValveBase: void setContainer(org.apache.catalina.Container)>, <org.apache.catalina.core.StandardHost: void <init>()>/new org.apache.catalina.core.StandardHostValve/0
+org.apache.catalina.core.StandardHostValve, <org.apache.catalina.valves.ValveBase: void setNext(org.apache.catalina.Valve)>, <org.apache.catalina.core.StandardHost: void <init>()>/new org.apache.catalina.core.StandardHostValve/0
+org.apache.catalina.core.StandardPipeline, <org.apache.catalina.util.LifecycleBase: java.lang.String getStateName()>, <org.apache.catalina.core.ContainerBase: void <init>()>/new org.apache.catalina.core.StandardPipeline/0
+org.apache.catalina.core.StandardPipeline, <org.apache.catalina.util.LifecycleBase: org.apache.catalina.LifecycleState getState()>, <org.apache.catalina.core.ContainerBase: void <init>()>/new org.apache.catalina.core.StandardPipeline/0
+org.apache.catalina.core.StandardPipeline, <org.apache.catalina.util.LifecycleBase: void setState(org.apache.catalina.LifecycleState)>, <org.apache.catalina.core.ContainerBase: void <init>()>/new org.apache.catalina.core.StandardPipeline/0
+org.apache.catalina.core.StandardPipeline, <org.apache.catalina.util.LifecycleBase: void setState(org.apache.catalina.LifecycleState,java.lang.Object)>, <org.apache.catalina.core.ContainerBase: void <init>()>/new org.apache.catalina.core.StandardPipeline/0
+org.apache.catalina.core.StandardService, <org.apache.catalina.util.LifecycleBase: java.lang.String getStateName()>, org.apache.catalina.core.StandardService::: (Mock)
+org.apache.catalina.core.StandardService, <org.apache.catalina.util.LifecycleBase: org.apache.catalina.LifecycleState getState()>, org.apache.catalina.core.StandardService::: (Mock)
+org.apache.catalina.core.StandardService, <org.apache.catalina.util.LifecycleBase: void setState(org.apache.catalina.LifecycleState)>, org.apache.catalina.core.StandardService::: (Mock)
+org.apache.catalina.core.StandardService, <org.apache.catalina.util.LifecycleBase: void setState(org.apache.catalina.LifecycleState,java.lang.Object)>, org.apache.catalina.core.StandardService::: (Mock)
+org.apache.catalina.core.StandardService, <org.apache.catalina.util.LifecycleMBeanBase: java.lang.String getDomain()>, org.apache.catalina.core.StandardService::: (Mock)
+org.apache.catalina.core.StandardService, <org.apache.catalina.util.LifecycleMBeanBase: void setDomain(java.lang.String)>, org.apache.catalina.core.StandardService::: (Mock)
+org.apache.catalina.core.StandardWrapper, <org.apache.catalina.core.ContainerBase: boolean getStartChildren()>, <org.apache.catalina.core.StandardContext: org.apache.catalina.Wrapper createWrapper()>/new org.apache.catalina.core.StandardWrapper/0
+org.apache.catalina.core.StandardWrapper, <org.apache.catalina.core.ContainerBase: int getBackgroundProcessorDelay()>, <org.apache.catalina.core.StandardContext: org.apache.catalina.Wrapper createWrapper()>/new org.apache.catalina.core.StandardWrapper/0
+org.apache.catalina.core.StandardWrapper, <org.apache.catalina.core.ContainerBase: int getStartStopThreads()>, <org.apache.catalina.core.StandardContext: org.apache.catalina.Wrapper createWrapper()>/new org.apache.catalina.core.StandardWrapper/0
+org.apache.catalina.core.StandardWrapper, <org.apache.catalina.core.ContainerBase: java.lang.String getLogName()>, <org.apache.catalina.core.StandardContext: org.apache.catalina.Wrapper createWrapper()>/new org.apache.catalina.core.StandardWrapper/0
+org.apache.catalina.core.StandardWrapper, <org.apache.catalina.core.ContainerBase: java.lang.String getMBeanKeyProperties()>, <org.apache.catalina.core.StandardContext: org.apache.catalina.Wrapper createWrapper()>/new org.apache.catalina.core.StandardWrapper/0
+org.apache.catalina.core.StandardWrapper, <org.apache.catalina.core.ContainerBase: java.lang.String getName()>, <org.apache.catalina.core.StandardContext: org.apache.catalina.Wrapper createWrapper()>/new org.apache.catalina.core.StandardWrapper/0
+org.apache.catalina.core.StandardWrapper, <org.apache.catalina.core.ContainerBase: org.apache.catalina.AccessLog getAccessLog()>, <org.apache.catalina.core.StandardContext: org.apache.catalina.Wrapper createWrapper()>/new org.apache.catalina.core.StandardWrapper/0
+org.apache.catalina.core.StandardWrapper, <org.apache.catalina.core.ContainerBase: org.apache.catalina.Cluster getCluster()>, <org.apache.catalina.core.StandardContext: org.apache.catalina.Wrapper createWrapper()>/new org.apache.catalina.core.StandardWrapper/0
+org.apache.catalina.core.StandardWrapper, <org.apache.catalina.core.ContainerBase: org.apache.catalina.Container getParent()>, <org.apache.catalina.core.StandardContext: org.apache.catalina.Wrapper createWrapper()>/new org.apache.catalina.core.StandardWrapper/0
+org.apache.catalina.core.StandardWrapper, <org.apache.catalina.core.ContainerBase: org.apache.catalina.Pipeline getPipeline()>, <org.apache.catalina.core.StandardContext: org.apache.catalina.Wrapper createWrapper()>/new org.apache.catalina.core.StandardWrapper/0
+org.apache.catalina.core.StandardWrapper, <org.apache.catalina.core.ContainerBase: org.apache.catalina.Realm getRealm()>, <org.apache.catalina.core.StandardContext: org.apache.catalina.Wrapper createWrapper()>/new org.apache.catalina.core.StandardWrapper/0
+org.apache.catalina.core.StandardWrapper, <org.apache.catalina.core.ContainerBase: org.apache.juli.logging.Log getLogger()>, <org.apache.catalina.core.StandardContext: org.apache.catalina.Wrapper createWrapper()>/new org.apache.catalina.core.StandardWrapper/0
+org.apache.catalina.core.StandardWrapper, <org.apache.catalina.core.ContainerBase: void setBackgroundProcessorDelay(int)>, <org.apache.catalina.core.StandardContext: org.apache.catalina.Wrapper createWrapper()>/new org.apache.catalina.core.StandardWrapper/0
+org.apache.catalina.core.StandardWrapper, <org.apache.catalina.core.ContainerBase: void setCluster(org.apache.catalina.Cluster)>, <org.apache.catalina.core.StandardContext: org.apache.catalina.Wrapper createWrapper()>/new org.apache.catalina.core.StandardWrapper/0
+org.apache.catalina.core.StandardWrapper, <org.apache.catalina.core.ContainerBase: void setName(java.lang.String)>, <org.apache.catalina.core.StandardContext: org.apache.catalina.Wrapper createWrapper()>/new org.apache.catalina.core.StandardWrapper/0
+org.apache.catalina.core.StandardWrapper, <org.apache.catalina.core.ContainerBase: void setParent(org.apache.catalina.Container)>, <org.apache.catalina.core.StandardContext: org.apache.catalina.Wrapper createWrapper()>/new org.apache.catalina.core.StandardWrapper/0
+org.apache.catalina.core.StandardWrapper, <org.apache.catalina.core.ContainerBase: void setRealm(org.apache.catalina.Realm)>, <org.apache.catalina.core.StandardContext: org.apache.catalina.Wrapper createWrapper()>/new org.apache.catalina.core.StandardWrapper/0
+org.apache.catalina.core.StandardWrapper, <org.apache.catalina.core.ContainerBase: void setStartChildren(boolean)>, <org.apache.catalina.core.StandardContext: org.apache.catalina.Wrapper createWrapper()>/new org.apache.catalina.core.StandardWrapper/0
+org.apache.catalina.core.StandardWrapper, <org.apache.catalina.core.ContainerBase: void setStartStopThreads(int)>, <org.apache.catalina.core.StandardContext: org.apache.catalina.Wrapper createWrapper()>/new org.apache.catalina.core.StandardWrapper/0
+org.apache.catalina.core.StandardWrapper, <org.apache.catalina.core.StandardWrapper: int getClassLoadTime()>, <org.apache.catalina.core.StandardContext: org.apache.catalina.Wrapper createWrapper()>/new org.apache.catalina.core.StandardWrapper/0
+org.apache.catalina.core.StandardWrapper, <org.apache.catalina.core.StandardWrapper: int getCountAllocated()>, <org.apache.catalina.core.StandardContext: org.apache.catalina.Wrapper createWrapper()>/new org.apache.catalina.core.StandardWrapper/0
+org.apache.catalina.core.StandardWrapper, <org.apache.catalina.core.StandardWrapper: int getErrorCount()>, <org.apache.catalina.core.StandardContext: org.apache.catalina.Wrapper createWrapper()>/new org.apache.catalina.core.StandardWrapper/0
+org.apache.catalina.core.StandardWrapper, <org.apache.catalina.core.StandardWrapper: int getLoadOnStartup()>, <org.apache.catalina.core.StandardContext: org.apache.catalina.Wrapper createWrapper()>/new org.apache.catalina.core.StandardWrapper/0
+org.apache.catalina.core.StandardWrapper, <org.apache.catalina.core.StandardWrapper: int getMaxInstances()>, <org.apache.catalina.core.StandardContext: org.apache.catalina.Wrapper createWrapper()>/new org.apache.catalina.core.StandardWrapper/0
+org.apache.catalina.core.StandardWrapper, <org.apache.catalina.core.StandardWrapper: int getRequestCount()>, <org.apache.catalina.core.StandardContext: org.apache.catalina.Wrapper createWrapper()>/new org.apache.catalina.core.StandardWrapper/0
+org.apache.catalina.core.StandardWrapper, <org.apache.catalina.core.StandardWrapper: java.lang.String getInitParameter(java.lang.String)>, <org.apache.catalina.core.StandardContext: org.apache.catalina.Wrapper createWrapper()>/new org.apache.catalina.core.StandardWrapper/0
+org.apache.catalina.core.StandardWrapper, <org.apache.catalina.core.StandardWrapper: java.lang.String getLoadOnStartupString()>, <org.apache.catalina.core.StandardContext: org.apache.catalina.Wrapper createWrapper()>/new org.apache.catalina.core.StandardWrapper/0
+org.apache.catalina.core.StandardWrapper, <org.apache.catalina.core.StandardWrapper: java.lang.String getRunAs()>, <org.apache.catalina.core.StandardContext: org.apache.catalina.Wrapper createWrapper()>/new org.apache.catalina.core.StandardWrapper/0
+org.apache.catalina.core.StandardWrapper, <org.apache.catalina.core.StandardWrapper: java.lang.String getServletClass()>, <org.apache.catalina.core.StandardContext: org.apache.catalina.Wrapper createWrapper()>/new org.apache.catalina.core.StandardWrapper/0
+org.apache.catalina.core.StandardWrapper, <org.apache.catalina.core.StandardWrapper: java.lang.String getServletName()>, <org.apache.catalina.core.StandardContext: org.apache.catalina.Wrapper createWrapper()>/new org.apache.catalina.core.StandardWrapper/0
+org.apache.catalina.core.StandardWrapper, <org.apache.catalina.core.StandardWrapper: long getAvailable()>, <org.apache.catalina.core.StandardContext: org.apache.catalina.Wrapper createWrapper()>/new org.apache.catalina.core.StandardWrapper/0
+org.apache.catalina.core.StandardWrapper, <org.apache.catalina.core.StandardWrapper: long getLoadTime()>, <org.apache.catalina.core.StandardContext: org.apache.catalina.Wrapper createWrapper()>/new org.apache.catalina.core.StandardWrapper/0
+org.apache.catalina.core.StandardWrapper, <org.apache.catalina.core.StandardWrapper: long getMaxTime()>, <org.apache.catalina.core.StandardContext: org.apache.catalina.Wrapper createWrapper()>/new org.apache.catalina.core.StandardWrapper/0
+org.apache.catalina.core.StandardWrapper, <org.apache.catalina.core.StandardWrapper: long getMinTime()>, <org.apache.catalina.core.StandardContext: org.apache.catalina.Wrapper createWrapper()>/new org.apache.catalina.core.StandardWrapper/0
+org.apache.catalina.core.StandardWrapper, <org.apache.catalina.core.StandardWrapper: long getProcessingTime()>, <org.apache.catalina.core.StandardContext: org.apache.catalina.Wrapper createWrapper()>/new org.apache.catalina.core.StandardWrapper/0
+org.apache.catalina.core.StandardWrapper, <org.apache.catalina.core.StandardWrapper: void setAsyncSupported(boolean)>, <org.apache.catalina.core.StandardContext: org.apache.catalina.Wrapper createWrapper()>/new org.apache.catalina.core.StandardWrapper/0
+org.apache.catalina.core.StandardWrapper, <org.apache.catalina.core.StandardWrapper: void setAvailable(long)>, <org.apache.catalina.core.StandardContext: org.apache.catalina.Wrapper createWrapper()>/new org.apache.catalina.core.StandardWrapper/0
+org.apache.catalina.core.StandardWrapper, <org.apache.catalina.core.StandardWrapper: void setEnabled(boolean)>, <org.apache.catalina.core.StandardContext: org.apache.catalina.Wrapper createWrapper()>/new org.apache.catalina.core.StandardWrapper/0
+org.apache.catalina.core.StandardWrapper, <org.apache.catalina.core.StandardWrapper: void setLoadOnStartup(int)>, <org.apache.catalina.core.StandardContext: org.apache.catalina.Wrapper createWrapper()>/new org.apache.catalina.core.StandardWrapper/0
+org.apache.catalina.core.StandardWrapper, <org.apache.catalina.core.StandardWrapper: void setLoadOnStartupString(java.lang.String)>, <org.apache.catalina.core.StandardContext: org.apache.catalina.Wrapper createWrapper()>/new org.apache.catalina.core.StandardWrapper/0
+org.apache.catalina.core.StandardWrapper, <org.apache.catalina.core.StandardWrapper: void setMaxInstances(int)>, <org.apache.catalina.core.StandardContext: org.apache.catalina.Wrapper createWrapper()>/new org.apache.catalina.core.StandardWrapper/0
+org.apache.catalina.core.StandardWrapper, <org.apache.catalina.core.StandardWrapper: void setOverridable(boolean)>, <org.apache.catalina.core.StandardContext: org.apache.catalina.Wrapper createWrapper()>/new org.apache.catalina.core.StandardWrapper/0
+org.apache.catalina.core.StandardWrapper, <org.apache.catalina.core.StandardWrapper: void setParent(org.apache.catalina.Container)>, <org.apache.catalina.core.StandardContext: org.apache.catalina.Wrapper createWrapper()>/new org.apache.catalina.core.StandardWrapper/0
+org.apache.catalina.core.StandardWrapper, <org.apache.catalina.core.StandardWrapper: void setRunAs(java.lang.String)>, <org.apache.catalina.core.StandardContext: org.apache.catalina.Wrapper createWrapper()>/new org.apache.catalina.core.StandardWrapper/0
+org.apache.catalina.core.StandardWrapper, <org.apache.catalina.core.StandardWrapper: void setServletClass(java.lang.String)>, <org.apache.catalina.core.StandardContext: org.apache.catalina.Wrapper createWrapper()>/new org.apache.catalina.core.StandardWrapper/0
+org.apache.catalina.core.StandardWrapper, <org.apache.catalina.core.StandardWrapper: void setServletName(java.lang.String)>, <org.apache.catalina.core.StandardContext: org.apache.catalina.Wrapper createWrapper()>/new org.apache.catalina.core.StandardWrapper/0
+org.apache.catalina.core.StandardWrapper, <org.apache.catalina.core.StandardWrapper: void setServletSecurityAnnotationScanRequired(boolean)>, <org.apache.catalina.core.StandardContext: org.apache.catalina.Wrapper createWrapper()>/new org.apache.catalina.core.StandardWrapper/0
+org.apache.catalina.core.StandardWrapper, <org.apache.catalina.util.LifecycleBase: java.lang.String getStateName()>, <org.apache.catalina.core.StandardContext: org.apache.catalina.Wrapper createWrapper()>/new org.apache.catalina.core.StandardWrapper/0
+org.apache.catalina.core.StandardWrapper, <org.apache.catalina.util.LifecycleBase: org.apache.catalina.LifecycleState getState()>, <org.apache.catalina.core.StandardContext: org.apache.catalina.Wrapper createWrapper()>/new org.apache.catalina.core.StandardWrapper/0
+org.apache.catalina.core.StandardWrapper, <org.apache.catalina.util.LifecycleBase: void setState(org.apache.catalina.LifecycleState)>, <org.apache.catalina.core.StandardContext: org.apache.catalina.Wrapper createWrapper()>/new org.apache.catalina.core.StandardWrapper/0
+org.apache.catalina.core.StandardWrapper, <org.apache.catalina.util.LifecycleBase: void setState(org.apache.catalina.LifecycleState,java.lang.Object)>, <org.apache.catalina.core.StandardContext: org.apache.catalina.Wrapper createWrapper()>/new org.apache.catalina.core.StandardWrapper/0
+org.apache.catalina.core.StandardWrapper, <org.apache.catalina.util.LifecycleMBeanBase: java.lang.String getDomain()>, <org.apache.catalina.core.StandardContext: org.apache.catalina.Wrapper createWrapper()>/new org.apache.catalina.core.StandardWrapper/0
+org.apache.catalina.core.StandardWrapper, <org.apache.catalina.util.LifecycleMBeanBase: void setDomain(java.lang.String)>, <org.apache.catalina.core.StandardContext: org.apache.catalina.Wrapper createWrapper()>/new org.apache.catalina.core.StandardWrapper/0
+org.apache.catalina.core.StandardWrapperValve, <org.apache.catalina.util.LifecycleBase: java.lang.String getStateName()>, <org.apache.catalina.core.StandardWrapper: void <init>()>/new org.apache.catalina.core.StandardWrapperValve/0
+org.apache.catalina.core.StandardWrapperValve, <org.apache.catalina.util.LifecycleBase: org.apache.catalina.LifecycleState getState()>, <org.apache.catalina.core.StandardWrapper: void <init>()>/new org.apache.catalina.core.StandardWrapperValve/0
+org.apache.catalina.core.StandardWrapperValve, <org.apache.catalina.util.LifecycleBase: void setState(org.apache.catalina.LifecycleState)>, <org.apache.catalina.core.StandardWrapper: void <init>()>/new org.apache.catalina.core.StandardWrapperValve/0
+org.apache.catalina.core.StandardWrapperValve, <org.apache.catalina.util.LifecycleBase: void setState(org.apache.catalina.LifecycleState,java.lang.Object)>, <org.apache.catalina.core.StandardWrapper: void <init>()>/new org.apache.catalina.core.StandardWrapperValve/0
+org.apache.catalina.core.StandardWrapperValve, <org.apache.catalina.util.LifecycleMBeanBase: java.lang.String getDomain()>, <org.apache.catalina.core.StandardWrapper: void <init>()>/new org.apache.catalina.core.StandardWrapperValve/0
+org.apache.catalina.core.StandardWrapperValve, <org.apache.catalina.util.LifecycleMBeanBase: void setDomain(java.lang.String)>, <org.apache.catalina.core.StandardWrapper: void <init>()>/new org.apache.catalina.core.StandardWrapperValve/0
+org.apache.catalina.core.StandardWrapperValve, <org.apache.catalina.valves.ValveBase: java.lang.String getDomainInternal()>, <org.apache.catalina.core.StandardWrapper: void <init>()>/new org.apache.catalina.core.StandardWrapperValve/0
+org.apache.catalina.core.StandardWrapperValve, <org.apache.catalina.valves.ValveBase: java.lang.String getObjectNameKeyProperties()>, <org.apache.catalina.core.StandardWrapper: void <init>()>/new org.apache.catalina.core.StandardWrapperValve/0
+org.apache.catalina.core.StandardWrapperValve, <org.apache.catalina.valves.ValveBase: org.apache.catalina.Container getContainer()>, <org.apache.catalina.core.StandardWrapper: void <init>()>/new org.apache.catalina.core.StandardWrapperValve/0
+org.apache.catalina.core.StandardWrapperValve, <org.apache.catalina.valves.ValveBase: org.apache.catalina.Valve getNext()>, <org.apache.catalina.core.StandardWrapper: void <init>()>/new org.apache.catalina.core.StandardWrapperValve/0
+org.apache.catalina.core.StandardWrapperValve, <org.apache.catalina.valves.ValveBase: void setAsyncSupported(boolean)>, <org.apache.catalina.core.StandardWrapper: void <init>()>/new org.apache.catalina.core.StandardWrapperValve/0
+org.apache.catalina.core.StandardWrapperValve, <org.apache.catalina.valves.ValveBase: void setContainer(org.apache.catalina.Container)>, <org.apache.catalina.core.StandardWrapper: void <init>()>/new org.apache.catalina.core.StandardWrapperValve/0
+org.apache.catalina.core.StandardWrapperValve, <org.apache.catalina.valves.ValveBase: void setNext(org.apache.catalina.Valve)>, <org.apache.catalina.core.StandardWrapper: void <init>()>/new org.apache.catalina.core.StandardWrapperValve/0
+org.apache.catalina.deploy.NamingResourcesImpl, <org.apache.catalina.util.LifecycleBase: java.lang.String getStateName()>, <org.apache.catalina.core.StandardContext: org.apache.catalina.deploy.NamingResourcesImpl getNamingResources()>/new org.apache.catalina.deploy.NamingResourcesImpl/0
+org.apache.catalina.deploy.NamingResourcesImpl, <org.apache.catalina.util.LifecycleBase: org.apache.catalina.LifecycleState getState()>, <org.apache.catalina.core.StandardContext: org.apache.catalina.deploy.NamingResourcesImpl getNamingResources()>/new org.apache.catalina.deploy.NamingResourcesImpl/0
+org.apache.catalina.deploy.NamingResourcesImpl, <org.apache.catalina.util.LifecycleBase: void setState(org.apache.catalina.LifecycleState)>, <org.apache.catalina.core.StandardContext: org.apache.catalina.deploy.NamingResourcesImpl getNamingResources()>/new org.apache.catalina.deploy.NamingResourcesImpl/0
+org.apache.catalina.deploy.NamingResourcesImpl, <org.apache.catalina.util.LifecycleBase: void setState(org.apache.catalina.LifecycleState,java.lang.Object)>, <org.apache.catalina.core.StandardContext: org.apache.catalina.deploy.NamingResourcesImpl getNamingResources()>/new org.apache.catalina.deploy.NamingResourcesImpl/0
+org.apache.catalina.deploy.NamingResourcesImpl, <org.apache.catalina.util.LifecycleMBeanBase: java.lang.String getDomain()>, <org.apache.catalina.core.StandardContext: org.apache.catalina.deploy.NamingResourcesImpl getNamingResources()>/new org.apache.catalina.deploy.NamingResourcesImpl/0
+org.apache.catalina.deploy.NamingResourcesImpl, <org.apache.catalina.util.LifecycleMBeanBase: void setDomain(java.lang.String)>, <org.apache.catalina.core.StandardContext: org.apache.catalina.deploy.NamingResourcesImpl getNamingResources()>/new org.apache.catalina.deploy.NamingResourcesImpl/0
+org.apache.catalina.ha.ClusterRuleSet, <org.apache.tomcat.util.digester.RuleSetBase: java.lang.String getNamespaceURI()>, org.apache.catalina.ha.ClusterRuleSet::: (Mock)
+org.apache.catalina.ha.DummyClusterSession, org.apache.catalina.Session, org.apache.catalina.ha.DummyClusterSession::: (Mock)
+org.apache.catalina.ha.session.DeltaManager, <org.apache.catalina.util.LifecycleBase: java.lang.String getStateName()>, <org.apache.catalina.ha.session.DeltaManager: org.apache.catalina.ha.ClusterManager cloneFromTemplate()>/new org.apache.catalina.ha.session.DeltaManager/0
+org.apache.catalina.ha.session.DeltaManager, <org.apache.catalina.util.LifecycleBase: org.apache.catalina.LifecycleState getState()>, <org.apache.catalina.ha.session.DeltaManager: org.apache.catalina.ha.ClusterManager cloneFromTemplate()>/new org.apache.catalina.ha.session.DeltaManager/0
+org.apache.catalina.ha.session.DeltaManager, <org.apache.catalina.util.LifecycleBase: void setState(org.apache.catalina.LifecycleState)>, <org.apache.catalina.ha.session.DeltaManager: org.apache.catalina.ha.ClusterManager cloneFromTemplate()>/new org.apache.catalina.ha.session.DeltaManager/0
+org.apache.catalina.ha.session.DeltaManager, <org.apache.catalina.util.LifecycleBase: void setState(org.apache.catalina.LifecycleState,java.lang.Object)>, <org.apache.catalina.ha.session.DeltaManager: org.apache.catalina.ha.ClusterManager cloneFromTemplate()>/new org.apache.catalina.ha.session.DeltaManager/0
+org.apache.catalina.ha.session.DeltaManager, <org.apache.catalina.util.LifecycleMBeanBase: java.lang.String getDomain()>, <org.apache.catalina.ha.session.DeltaManager: org.apache.catalina.ha.ClusterManager cloneFromTemplate()>/new org.apache.catalina.ha.session.DeltaManager/0
+org.apache.catalina.ha.session.DeltaManager, <org.apache.catalina.util.LifecycleMBeanBase: void setDomain(java.lang.String)>, <org.apache.catalina.ha.session.DeltaManager: org.apache.catalina.ha.ClusterManager cloneFromTemplate()>/new org.apache.catalina.ha.session.DeltaManager/0
+org.apache.catalina.ha.session.DeltaSession, org.apache.catalina.Session, <org.apache.catalina.ha.session.DeltaManager: org.apache.catalina.ha.session.DeltaSession getNewDeltaSession()>/new org.apache.catalina.ha.session.DeltaSession/0
+org.apache.catalina.ha.session.DeltaSession, org.apache.catalina.session.StandardSession, <org.apache.catalina.ha.session.DeltaManager: org.apache.catalina.ha.session.DeltaSession getNewDeltaSession()>/new org.apache.catalina.ha.session.DeltaSession/0
+org.apache.catalina.ha.tcp.ReplicationValve, <org.apache.catalina.util.LifecycleBase: java.lang.String getStateName()>, org.apache.catalina.ha.tcp.ReplicationValve::: (Mock)
+org.apache.catalina.ha.tcp.ReplicationValve, <org.apache.catalina.util.LifecycleBase: org.apache.catalina.LifecycleState getState()>, org.apache.catalina.ha.tcp.ReplicationValve::: (Mock)
+org.apache.catalina.ha.tcp.ReplicationValve, <org.apache.catalina.util.LifecycleBase: void setState(org.apache.catalina.LifecycleState)>, org.apache.catalina.ha.tcp.ReplicationValve::: (Mock)
+org.apache.catalina.ha.tcp.ReplicationValve, <org.apache.catalina.util.LifecycleBase: void setState(org.apache.catalina.LifecycleState,java.lang.Object)>, org.apache.catalina.ha.tcp.ReplicationValve::: (Mock)
+org.apache.catalina.ha.tcp.ReplicationValve, <org.apache.catalina.util.LifecycleMBeanBase: java.lang.String getDomain()>, org.apache.catalina.ha.tcp.ReplicationValve::: (Mock)
+org.apache.catalina.ha.tcp.ReplicationValve, <org.apache.catalina.util.LifecycleMBeanBase: void setDomain(java.lang.String)>, org.apache.catalina.ha.tcp.ReplicationValve::: (Mock)
+org.apache.catalina.ha.tcp.ReplicationValve, <org.apache.catalina.valves.ValveBase: java.lang.String getDomainInternal()>, org.apache.catalina.ha.tcp.ReplicationValve::: (Mock)
+org.apache.catalina.ha.tcp.ReplicationValve, <org.apache.catalina.valves.ValveBase: java.lang.String getObjectNameKeyProperties()>, org.apache.catalina.ha.tcp.ReplicationValve::: (Mock)
+org.apache.catalina.ha.tcp.ReplicationValve, <org.apache.catalina.valves.ValveBase: org.apache.catalina.Container getContainer()>, org.apache.catalina.ha.tcp.ReplicationValve::: (Mock)
+org.apache.catalina.ha.tcp.ReplicationValve, <org.apache.catalina.valves.ValveBase: org.apache.catalina.Valve getNext()>, org.apache.catalina.ha.tcp.ReplicationValve::: (Mock)
+org.apache.catalina.ha.tcp.ReplicationValve, <org.apache.catalina.valves.ValveBase: void setAsyncSupported(boolean)>, org.apache.catalina.ha.tcp.ReplicationValve::: (Mock)
+org.apache.catalina.ha.tcp.ReplicationValve, <org.apache.catalina.valves.ValveBase: void setContainer(org.apache.catalina.Container)>, org.apache.catalina.ha.tcp.ReplicationValve::: (Mock)
+org.apache.catalina.ha.tcp.ReplicationValve, <org.apache.catalina.valves.ValveBase: void setNext(org.apache.catalina.Valve)>, org.apache.catalina.ha.tcp.ReplicationValve::: (Mock)
+org.apache.catalina.ha.tcp.SimpleTcpCluster, <org.apache.catalina.util.LifecycleBase: java.lang.String getStateName()>, org.apache.catalina.ha.tcp.SimpleTcpCluster::: (Mock)
+org.apache.catalina.ha.tcp.SimpleTcpCluster, <org.apache.catalina.util.LifecycleBase: org.apache.catalina.LifecycleState getState()>, org.apache.catalina.ha.tcp.SimpleTcpCluster::: (Mock)
+org.apache.catalina.ha.tcp.SimpleTcpCluster, <org.apache.catalina.util.LifecycleBase: void setState(org.apache.catalina.LifecycleState)>, org.apache.catalina.ha.tcp.SimpleTcpCluster::: (Mock)
+org.apache.catalina.ha.tcp.SimpleTcpCluster, <org.apache.catalina.util.LifecycleBase: void setState(org.apache.catalina.LifecycleState,java.lang.Object)>, org.apache.catalina.ha.tcp.SimpleTcpCluster::: (Mock)
+org.apache.catalina.ha.tcp.SimpleTcpCluster, <org.apache.catalina.util.LifecycleMBeanBase: java.lang.String getDomain()>, org.apache.catalina.ha.tcp.SimpleTcpCluster::: (Mock)
+org.apache.catalina.ha.tcp.SimpleTcpCluster, <org.apache.catalina.util.LifecycleMBeanBase: void setDomain(java.lang.String)>, org.apache.catalina.ha.tcp.SimpleTcpCluster::: (Mock)
+org.apache.catalina.loader.WebappLoader, <org.apache.catalina.util.LifecycleBase: java.lang.String getStateName()>, <org.apache.catalina.core.StandardContext: void startInternal()>/new org.apache.catalina.loader.WebappLoader/0
+org.apache.catalina.loader.WebappLoader, <org.apache.catalina.util.LifecycleBase: org.apache.catalina.LifecycleState getState()>, <org.apache.catalina.core.StandardContext: void startInternal()>/new org.apache.catalina.loader.WebappLoader/0
+org.apache.catalina.loader.WebappLoader, <org.apache.catalina.util.LifecycleBase: void setState(org.apache.catalina.LifecycleState)>, <org.apache.catalina.core.StandardContext: void startInternal()>/new org.apache.catalina.loader.WebappLoader/0
+org.apache.catalina.loader.WebappLoader, <org.apache.catalina.util.LifecycleBase: void setState(org.apache.catalina.LifecycleState,java.lang.Object)>, <org.apache.catalina.core.StandardContext: void startInternal()>/new org.apache.catalina.loader.WebappLoader/0
+org.apache.catalina.loader.WebappLoader, <org.apache.catalina.util.LifecycleMBeanBase: java.lang.String getDomain()>, <org.apache.catalina.core.StandardContext: void startInternal()>/new org.apache.catalina.loader.WebappLoader/0
+org.apache.catalina.loader.WebappLoader, <org.apache.catalina.util.LifecycleMBeanBase: void setDomain(java.lang.String)>, <org.apache.catalina.core.StandardContext: void startInternal()>/new org.apache.catalina.loader.WebappLoader/0
+org.apache.catalina.realm.DataSourceRealm, <org.apache.catalina.util.LifecycleBase: java.lang.String getStateName()>, org.apache.catalina.realm.DataSourceRealm::: (Mock)
+org.apache.catalina.realm.DataSourceRealm, <org.apache.catalina.util.LifecycleBase: org.apache.catalina.LifecycleState getState()>, org.apache.catalina.realm.DataSourceRealm::: (Mock)
+org.apache.catalina.realm.DataSourceRealm, <org.apache.catalina.util.LifecycleBase: void setState(org.apache.catalina.LifecycleState)>, org.apache.catalina.realm.DataSourceRealm::: (Mock)
+org.apache.catalina.realm.DataSourceRealm, <org.apache.catalina.util.LifecycleBase: void setState(org.apache.catalina.LifecycleState,java.lang.Object)>, org.apache.catalina.realm.DataSourceRealm::: (Mock)
+org.apache.catalina.realm.DataSourceRealm, <org.apache.catalina.util.LifecycleMBeanBase: java.lang.String getDomain()>, org.apache.catalina.realm.DataSourceRealm::: (Mock)
+org.apache.catalina.realm.DataSourceRealm, <org.apache.catalina.util.LifecycleMBeanBase: void setDomain(java.lang.String)>, org.apache.catalina.realm.DataSourceRealm::: (Mock)
+org.apache.catalina.realm.JDBCRealm, <org.apache.catalina.util.LifecycleBase: java.lang.String getStateName()>, org.apache.catalina.realm.JDBCRealm::: (Mock)
+org.apache.catalina.realm.JDBCRealm, <org.apache.catalina.util.LifecycleBase: org.apache.catalina.LifecycleState getState()>, org.apache.catalina.realm.JDBCRealm::: (Mock)
+org.apache.catalina.realm.JDBCRealm, <org.apache.catalina.util.LifecycleBase: void setState(org.apache.catalina.LifecycleState)>, org.apache.catalina.realm.JDBCRealm::: (Mock)
+org.apache.catalina.realm.JDBCRealm, <org.apache.catalina.util.LifecycleBase: void setState(org.apache.catalina.LifecycleState,java.lang.Object)>, org.apache.catalina.realm.JDBCRealm::: (Mock)
+org.apache.catalina.realm.JDBCRealm, <org.apache.catalina.util.LifecycleMBeanBase: java.lang.String getDomain()>, org.apache.catalina.realm.JDBCRealm::: (Mock)
+org.apache.catalina.realm.JDBCRealm, <org.apache.catalina.util.LifecycleMBeanBase: void setDomain(java.lang.String)>, org.apache.catalina.realm.JDBCRealm::: (Mock)
+org.apache.catalina.realm.JNDIRealm, <org.apache.catalina.util.LifecycleBase: java.lang.String getStateName()>, org.apache.catalina.realm.JNDIRealm::: (Mock)
+org.apache.catalina.realm.JNDIRealm, <org.apache.catalina.util.LifecycleBase: org.apache.catalina.LifecycleState getState()>, org.apache.catalina.realm.JNDIRealm::: (Mock)
+org.apache.catalina.realm.JNDIRealm, <org.apache.catalina.util.LifecycleBase: void setState(org.apache.catalina.LifecycleState)>, org.apache.catalina.realm.JNDIRealm::: (Mock)
+org.apache.catalina.realm.JNDIRealm, <org.apache.catalina.util.LifecycleBase: void setState(org.apache.catalina.LifecycleState,java.lang.Object)>, org.apache.catalina.realm.JNDIRealm::: (Mock)
+org.apache.catalina.realm.JNDIRealm, <org.apache.catalina.util.LifecycleMBeanBase: java.lang.String getDomain()>, org.apache.catalina.realm.JNDIRealm::: (Mock)
+org.apache.catalina.realm.JNDIRealm, <org.apache.catalina.util.LifecycleMBeanBase: void setDomain(java.lang.String)>, org.apache.catalina.realm.JNDIRealm::: (Mock)
+org.apache.catalina.realm.MemoryRealm, <org.apache.catalina.util.LifecycleBase: java.lang.String getStateName()>, org.apache.catalina.realm.MemoryRealm::: (Mock)
+org.apache.catalina.realm.MemoryRealm, <org.apache.catalina.util.LifecycleBase: org.apache.catalina.LifecycleState getState()>, org.apache.catalina.realm.MemoryRealm::: (Mock)
+org.apache.catalina.realm.MemoryRealm, <org.apache.catalina.util.LifecycleBase: void setState(org.apache.catalina.LifecycleState)>, org.apache.catalina.realm.MemoryRealm::: (Mock)
+org.apache.catalina.realm.MemoryRealm, <org.apache.catalina.util.LifecycleBase: void setState(org.apache.catalina.LifecycleState,java.lang.Object)>, org.apache.catalina.realm.MemoryRealm::: (Mock)
+org.apache.catalina.realm.MemoryRealm, <org.apache.catalina.util.LifecycleMBeanBase: java.lang.String getDomain()>, org.apache.catalina.realm.MemoryRealm::: (Mock)
+org.apache.catalina.realm.MemoryRealm, <org.apache.catalina.util.LifecycleMBeanBase: void setDomain(java.lang.String)>, org.apache.catalina.realm.MemoryRealm::: (Mock)
+org.apache.catalina.realm.NullRealm, <org.apache.catalina.util.LifecycleBase: java.lang.String getStateName()>, <org.apache.catalina.core.StandardEngine: org.apache.catalina.Realm getRealm()>/new org.apache.catalina.realm.NullRealm/0
+org.apache.catalina.realm.NullRealm, <org.apache.catalina.util.LifecycleBase: org.apache.catalina.LifecycleState getState()>, <org.apache.catalina.core.StandardEngine: org.apache.catalina.Realm getRealm()>/new org.apache.catalina.realm.NullRealm/0
+org.apache.catalina.realm.NullRealm, <org.apache.catalina.util.LifecycleBase: void setState(org.apache.catalina.LifecycleState)>, <org.apache.catalina.core.StandardEngine: org.apache.catalina.Realm getRealm()>/new org.apache.catalina.realm.NullRealm/0
+org.apache.catalina.realm.NullRealm, <org.apache.catalina.util.LifecycleBase: void setState(org.apache.catalina.LifecycleState,java.lang.Object)>, <org.apache.catalina.core.StandardEngine: org.apache.catalina.Realm getRealm()>/new org.apache.catalina.realm.NullRealm/0
+org.apache.catalina.realm.NullRealm, <org.apache.catalina.util.LifecycleMBeanBase: java.lang.String getDomain()>, <org.apache.catalina.core.StandardEngine: org.apache.catalina.Realm getRealm()>/new org.apache.catalina.realm.NullRealm/0
+org.apache.catalina.realm.NullRealm, <org.apache.catalina.util.LifecycleMBeanBase: void setDomain(java.lang.String)>, <org.apache.catalina.core.StandardEngine: org.apache.catalina.Realm getRealm()>/new org.apache.catalina.realm.NullRealm/0
+org.apache.catalina.realm.UserDatabaseRealm, <org.apache.catalina.util.LifecycleBase: java.lang.String getStateName()>, org.apache.catalina.realm.UserDatabaseRealm::: (Mock)
+org.apache.catalina.realm.UserDatabaseRealm, <org.apache.catalina.util.LifecycleBase: org.apache.catalina.LifecycleState getState()>, org.apache.catalina.realm.UserDatabaseRealm::: (Mock)
+org.apache.catalina.realm.UserDatabaseRealm, <org.apache.catalina.util.LifecycleBase: void setState(org.apache.catalina.LifecycleState)>, org.apache.catalina.realm.UserDatabaseRealm::: (Mock)
+org.apache.catalina.realm.UserDatabaseRealm, <org.apache.catalina.util.LifecycleBase: void setState(org.apache.catalina.LifecycleState,java.lang.Object)>, org.apache.catalina.realm.UserDatabaseRealm::: (Mock)
+org.apache.catalina.realm.UserDatabaseRealm, <org.apache.catalina.util.LifecycleMBeanBase: java.lang.String getDomain()>, org.apache.catalina.realm.UserDatabaseRealm::: (Mock)
+org.apache.catalina.realm.UserDatabaseRealm, <org.apache.catalina.util.LifecycleMBeanBase: void setDomain(java.lang.String)>, org.apache.catalina.realm.UserDatabaseRealm::: (Mock)
+org.apache.catalina.session.PersistentManager, <org.apache.catalina.util.LifecycleBase: java.lang.String getStateName()>, org.apache.catalina.session.PersistentManager::: (Mock)
+org.apache.catalina.session.PersistentManager, <org.apache.catalina.util.LifecycleBase: org.apache.catalina.LifecycleState getState()>, org.apache.catalina.session.PersistentManager::: (Mock)
+org.apache.catalina.session.PersistentManager, <org.apache.catalina.util.LifecycleBase: void setState(org.apache.catalina.LifecycleState)>, org.apache.catalina.session.PersistentManager::: (Mock)
+org.apache.catalina.session.PersistentManager, <org.apache.catalina.util.LifecycleBase: void setState(org.apache.catalina.LifecycleState,java.lang.Object)>, org.apache.catalina.session.PersistentManager::: (Mock)
+org.apache.catalina.session.PersistentManager, <org.apache.catalina.util.LifecycleMBeanBase: java.lang.String getDomain()>, org.apache.catalina.session.PersistentManager::: (Mock)
+org.apache.catalina.session.PersistentManager, <org.apache.catalina.util.LifecycleMBeanBase: void setDomain(java.lang.String)>, org.apache.catalina.session.PersistentManager::: (Mock)
+org.apache.catalina.session.StandardManager, <org.apache.catalina.util.LifecycleBase: java.lang.String getStateName()>, <org.apache.catalina.core.StandardContext: void startInternal()>/new org.apache.catalina.session.StandardManager/0
+org.apache.catalina.session.StandardManager, <org.apache.catalina.util.LifecycleBase: org.apache.catalina.LifecycleState getState()>, <org.apache.catalina.core.StandardContext: void startInternal()>/new org.apache.catalina.session.StandardManager/0
+org.apache.catalina.session.StandardManager, <org.apache.catalina.util.LifecycleBase: void setState(org.apache.catalina.LifecycleState)>, <org.apache.catalina.core.StandardContext: void startInternal()>/new org.apache.catalina.session.StandardManager/0
+org.apache.catalina.session.StandardManager, <org.apache.catalina.util.LifecycleBase: void setState(org.apache.catalina.LifecycleState,java.lang.Object)>, <org.apache.catalina.core.StandardContext: void startInternal()>/new org.apache.catalina.session.StandardManager/0
+org.apache.catalina.session.StandardManager, <org.apache.catalina.util.LifecycleMBeanBase: java.lang.String getDomain()>, <org.apache.catalina.core.StandardContext: void startInternal()>/new org.apache.catalina.session.StandardManager/0
+org.apache.catalina.session.StandardManager, <org.apache.catalina.util.LifecycleMBeanBase: void setDomain(java.lang.String)>, <org.apache.catalina.core.StandardContext: void startInternal()>/new org.apache.catalina.session.StandardManager/0
+org.apache.catalina.session.StandardSession, org.apache.catalina.Session, org.apache.catalina.session.StandardSession::: (Mock)
+org.apache.catalina.session.StandardSession, org.apache.catalina.session.StandardSession, org.apache.catalina.session.StandardSession::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.startup.FailedContext: boolean getAddWebinfClassesResources()>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.startup.FailedContext: boolean getAllowCasualMultipartParsing()>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.startup.FailedContext: boolean getConfigured()>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.startup.FailedContext: boolean getCookies()>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.startup.FailedContext: boolean getCrossContext()>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.startup.FailedContext: boolean getDenyUncoveredHttpMethods()>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.startup.FailedContext: boolean getDispatchersUseEncodedPaths()>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.startup.FailedContext: boolean getDistributable()>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.startup.FailedContext: boolean getFireRequestListenersOnForwards()>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.startup.FailedContext: boolean getIgnoreAnnotations()>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.startup.FailedContext: boolean getLogEffectiveWebXml()>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.startup.FailedContext: boolean getMapperContextRootRedirectEnabled()>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.startup.FailedContext: boolean getMapperDirectoryRedirectEnabled()>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.startup.FailedContext: boolean getOverride()>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.startup.FailedContext: boolean getPaused()>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.startup.FailedContext: boolean getPreemptiveAuthentication()>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.startup.FailedContext: boolean getPrivileged()>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.startup.FailedContext: boolean getReloadable()>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.startup.FailedContext: boolean getSendRedirectBody()>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.startup.FailedContext: boolean getSessionCookiePathUsesTrailingSlash()>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.startup.FailedContext: boolean getSwallowAbortedUploads()>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.startup.FailedContext: boolean getSwallowOutput()>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.startup.FailedContext: boolean getTldValidation()>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.startup.FailedContext: boolean getUseHttpOnly()>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.startup.FailedContext: boolean getUseRelativeRedirects()>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.startup.FailedContext: boolean getValidateClientProvidedNewSessionId()>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.startup.FailedContext: boolean getXmlBlockExternal()>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.startup.FailedContext: boolean getXmlNamespaceAware()>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.startup.FailedContext: boolean getXmlValidation()>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.startup.FailedContext: int getBackgroundProcessorDelay()>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.startup.FailedContext: int getEffectiveMajorVersion()>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.startup.FailedContext: int getEffectiveMinorVersion()>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.startup.FailedContext: int getSessionTimeout()>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.startup.FailedContext: int getStartStopThreads()>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.startup.FailedContext: java.lang.Object getNamingToken()>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.startup.FailedContext: java.lang.Object[] getApplicationEventListeners()>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.startup.FailedContext: java.lang.Object[] getApplicationLifecycleListeners()>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.startup.FailedContext: java.lang.String getAltDDName()>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.startup.FailedContext: java.lang.String getBaseName()>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.startup.FailedContext: java.lang.String getContainerSciFilter()>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.startup.FailedContext: java.lang.String getDisplayName()>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.startup.FailedContext: java.lang.String getDocBase()>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.startup.FailedContext: java.lang.String getEncodedPath()>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.startup.FailedContext: java.lang.String getLogName()>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.startup.FailedContext: java.lang.String getMBeanKeyProperties()>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.startup.FailedContext: java.lang.String getName()>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.startup.FailedContext: java.lang.String getPath()>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.startup.FailedContext: java.lang.String getPublicId()>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.startup.FailedContext: java.lang.String getRealPath(java.lang.String)>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.startup.FailedContext: java.lang.String getRequestCharacterEncoding()>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.startup.FailedContext: java.lang.String getResourceOnlyServlets()>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.startup.FailedContext: java.lang.String getResponseCharacterEncoding()>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.startup.FailedContext: java.lang.String getSessionCookieDomain()>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.startup.FailedContext: java.lang.String getSessionCookieName()>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.startup.FailedContext: java.lang.String getSessionCookiePath()>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.startup.FailedContext: java.lang.String getWebappVersion()>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.startup.FailedContext: java.lang.String getWrapperClass()>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.startup.FailedContext: org.apache.catalina.AccessLog getAccessLog()>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.startup.FailedContext: org.apache.catalina.Authenticator getAuthenticator()>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.startup.FailedContext: org.apache.catalina.Cluster getCluster()>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.startup.FailedContext: org.apache.catalina.Container getParent()>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.startup.FailedContext: org.apache.catalina.deploy.NamingResourcesImpl getNamingResources()>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.startup.FailedContext: org.apache.catalina.Loader getLoader()>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.startup.FailedContext: org.apache.catalina.Manager getManager()>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.startup.FailedContext: org.apache.catalina.Pipeline getPipeline()>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.startup.FailedContext: org.apache.catalina.Realm getRealm()>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.startup.FailedContext: org.apache.catalina.ThreadBindingListener getThreadBindingListener()>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.startup.FailedContext: org.apache.catalina.WebResourceRoot getResources()>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.startup.FailedContext: org.apache.juli.logging.Log getLogger()>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.startup.FailedContext: org.apache.tomcat.InstanceManager getInstanceManager()>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.startup.FailedContext: org.apache.tomcat.JarScanner getJarScanner()>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.startup.FailedContext: org.apache.tomcat.util.descriptor.web.LoginConfig getLoginConfig()>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.startup.FailedContext: org.apache.tomcat.util.http.CookieProcessor getCookieProcessor()>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.startup.FailedContext: void setAddWebinfClassesResources(boolean)>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.startup.FailedContext: void setAllowCasualMultipartParsing(boolean)>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.startup.FailedContext: void setAltDDName(java.lang.String)>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.startup.FailedContext: void setApplicationEventListeners(java.lang.Object[])>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.startup.FailedContext: void setApplicationLifecycleListeners(java.lang.Object[])>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.startup.FailedContext: void setBackgroundProcessorDelay(int)>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.startup.FailedContext: void setCluster(org.apache.catalina.Cluster)>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.startup.FailedContext: void setConfigured(boolean)>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.startup.FailedContext: void setContainerSciFilter(java.lang.String)>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.startup.FailedContext: void setCookieProcessor(org.apache.tomcat.util.http.CookieProcessor)>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.startup.FailedContext: void setCookies(boolean)>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.startup.FailedContext: void setCrossContext(boolean)>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.startup.FailedContext: void setDenyUncoveredHttpMethods(boolean)>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.startup.FailedContext: void setDispatchersUseEncodedPaths(boolean)>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.startup.FailedContext: void setDisplayName(java.lang.String)>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.startup.FailedContext: void setDistributable(boolean)>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.startup.FailedContext: void setDocBase(java.lang.String)>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.startup.FailedContext: void setEffectiveMajorVersion(int)>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.startup.FailedContext: void setEffectiveMinorVersion(int)>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.startup.FailedContext: void setFireRequestListenersOnForwards(boolean)>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.startup.FailedContext: void setIgnoreAnnotations(boolean)>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.startup.FailedContext: void setInstanceManager(org.apache.tomcat.InstanceManager)>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.startup.FailedContext: void setJarScanner(org.apache.tomcat.JarScanner)>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.startup.FailedContext: void setLoader(org.apache.catalina.Loader)>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.startup.FailedContext: void setLogEffectiveWebXml(boolean)>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.startup.FailedContext: void setLoginConfig(org.apache.tomcat.util.descriptor.web.LoginConfig)>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.startup.FailedContext: void setManager(org.apache.catalina.Manager)>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.startup.FailedContext: void setMapperContextRootRedirectEnabled(boolean)>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.startup.FailedContext: void setMapperDirectoryRedirectEnabled(boolean)>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.startup.FailedContext: void setName(java.lang.String)>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.startup.FailedContext: void setNamingResources(org.apache.catalina.deploy.NamingResourcesImpl)>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.startup.FailedContext: void setOverride(boolean)>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.startup.FailedContext: void setParent(org.apache.catalina.Container)>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.startup.FailedContext: void setPath(java.lang.String)>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.startup.FailedContext: void setPreemptiveAuthentication(boolean)>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.startup.FailedContext: void setPrivileged(boolean)>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.startup.FailedContext: void setPublicId(java.lang.String)>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.startup.FailedContext: void setRealm(org.apache.catalina.Realm)>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.startup.FailedContext: void setReloadable(boolean)>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.startup.FailedContext: void setRequestCharacterEncoding(java.lang.String)>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.startup.FailedContext: void setResourceOnlyServlets(java.lang.String)>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.startup.FailedContext: void setResources(org.apache.catalina.WebResourceRoot)>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.startup.FailedContext: void setResponseCharacterEncoding(java.lang.String)>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.startup.FailedContext: void setSendRedirectBody(boolean)>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.startup.FailedContext: void setSessionCookieDomain(java.lang.String)>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.startup.FailedContext: void setSessionCookieName(java.lang.String)>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.startup.FailedContext: void setSessionCookiePath(java.lang.String)>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.startup.FailedContext: void setSessionCookiePathUsesTrailingSlash(boolean)>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.startup.FailedContext: void setSessionTimeout(int)>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.startup.FailedContext: void setStartStopThreads(int)>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.startup.FailedContext: void setSwallowAbortedUploads(boolean)>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.startup.FailedContext: void setSwallowOutput(boolean)>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.startup.FailedContext: void setThreadBindingListener(org.apache.catalina.ThreadBindingListener)>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.startup.FailedContext: void setTldValidation(boolean)>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.startup.FailedContext: void setUseHttpOnly(boolean)>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.startup.FailedContext: void setUseRelativeRedirects(boolean)>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.startup.FailedContext: void setValidateClientProvidedNewSessionId(boolean)>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.startup.FailedContext: void setWebappVersion(java.lang.String)>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.startup.FailedContext: void setWrapperClass(java.lang.String)>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.startup.FailedContext: void setXmlBlockExternal(boolean)>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.startup.FailedContext: void setXmlNamespaceAware(boolean)>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.startup.FailedContext: void setXmlValidation(boolean)>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.util.LifecycleBase: java.lang.String getStateName()>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.util.LifecycleBase: org.apache.catalina.LifecycleState getState()>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.util.LifecycleBase: void setState(org.apache.catalina.LifecycleState)>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.util.LifecycleBase: void setState(org.apache.catalina.LifecycleState,java.lang.Object)>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.util.LifecycleMBeanBase: java.lang.String getDomain()>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.startup.FailedContext, <org.apache.catalina.util.LifecycleMBeanBase: void setDomain(java.lang.String)>, org.apache.catalina.startup.FailedContext::: (Mock)
+org.apache.catalina.tribes.ChannelException, org.apache.catalina.tribes.ChannelException, <org.apache.catalina.tribes.group.ChannelCoordinator: void internalStart(int)>/new org.apache.catalina.tribes.ChannelException/0
+org.apache.catalina.tribes.transport.nio.NioReceiver, org.apache.catalina.tribes.io.ListenCallback, <org.apache.catalina.tribes.group.ChannelCoordinator: void <init>()>/new org.apache.catalina.tribes.transport.nio.NioReceiver/0
+org.apache.catalina.util.ParameterMap, org.apache.catalina.util.ParameterMap, org.apache.catalina.util.ParameterMap::: (Mock)
+org.apache.catalina.webresources.StandardRoot, <org.apache.catalina.util.LifecycleBase: java.lang.String getStateName()>, <org.apache.catalina.core.StandardContext: void startInternal()>/new org.apache.catalina.webresources.StandardRoot/0
+org.apache.catalina.webresources.StandardRoot, <org.apache.catalina.util.LifecycleBase: org.apache.catalina.LifecycleState getState()>, <org.apache.catalina.core.StandardContext: void startInternal()>/new org.apache.catalina.webresources.StandardRoot/0
+org.apache.catalina.webresources.StandardRoot, <org.apache.catalina.util.LifecycleBase: void setState(org.apache.catalina.LifecycleState)>, <org.apache.catalina.core.StandardContext: void startInternal()>/new org.apache.catalina.webresources.StandardRoot/0
+org.apache.catalina.webresources.StandardRoot, <org.apache.catalina.util.LifecycleBase: void setState(org.apache.catalina.LifecycleState,java.lang.Object)>, <org.apache.catalina.core.StandardContext: void startInternal()>/new org.apache.catalina.webresources.StandardRoot/0
+org.apache.catalina.webresources.StandardRoot, <org.apache.catalina.util.LifecycleMBeanBase: java.lang.String getDomain()>, <org.apache.catalina.core.StandardContext: void startInternal()>/new org.apache.catalina.webresources.StandardRoot/0
+org.apache.catalina.webresources.StandardRoot, <org.apache.catalina.util.LifecycleMBeanBase: void setDomain(java.lang.String)>, <org.apache.catalina.core.StandardContext: void startInternal()>/new org.apache.catalina.webresources.StandardRoot/0
+org.apache.coyote.CloseNowException, org.apache.coyote.CloseNowException, org.apache.coyote.CloseNowException::: (Mock)
+org.apache.tomcat.util.modeler.AttributeInfo, org.apache.tomcat.util.modeler.AttributeInfo, org.apache.tomcat.util.modeler.AttributeInfo::: (Mock)
+org.apache.tomcat.util.modeler.ManagedBean, org.apache.tomcat.util.modeler.ManagedBean, org.apache.tomcat.util.modeler.ManagedBean::: (Mock)
+org.apache.tomcat.util.modeler.NotificationInfo, org.apache.tomcat.util.modeler.NotificationInfo, org.apache.tomcat.util.modeler.NotificationInfo::: (Mock)
+org.apache.tomcat.util.modeler.OperationInfo, org.apache.tomcat.util.modeler.OperationInfo, org.apache.tomcat.util.modeler.OperationInfo::: (Mock)
+org.apache.tomcat.util.modeler.ParameterInfo, org.apache.tomcat.util.modeler.ParameterInfo, org.apache.tomcat.util.modeler.ParameterInfo::: (Mock)
+Results for catalina.ha
