@@ -1,6 +1,5 @@
-# Artifact: ModGuard: Identifying Integrity & Confidentiality Violations in Java 9 Modules
+# Artifact: ModGuard: Identifying Integrity & Confidentiality Violations in Java Modules
 
-__MISSING SOURCES IN CONTAINER__
 
 ## Artifact Description
 We provide the following artifacts:
@@ -19,11 +18,11 @@ We provide the following artifacts:
 * Install docker on your machine
 * Pull our docker image using:
 
-		docker pull andann/pldi2018:evaluation
+		docker pull andann/modguard:latest
 
 * After pulling the image it can be run using:
 
-		docker run --shm-size="6g" -it andann/pldi2018:evaluation /bin/bash
+		docker run --shm-size="6g" -it andann/modguard:latest /bin/bash
 
 * You will find yourself in a bash session in the directory of the evaluation project
 
