@@ -1,0 +1,262 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <link rel="stylesheet" href="-H" type="text/css" />
+</head>
+<body>
+<div id="TOC">
+<ul>
+<li><a href="#artifact-modguard-identifying-integrity-confidentiality-violations-in-java-9-modules">Artifact: ModGuard: Identifying Integrity &amp; Confidentiality Violations in Java 9 Modules</a><ul>
+<li><a href="#artifact-description">Artifact Description</a></li>
+<li><a href="#setup">Setup</a></li>
+<li><a href="#reproducing-the-evaluation">Reproducing the Evaluation</a></li>
+<li><a href="#folders-explained-evaluation-environment">Folders Explained / Evaluation Environment</a></li>
+</ul></li>
+</ul>
+</div>
+<style>
+body {
+    margin: auto;
+    padding-right: 1em;
+    padding-left: 1em;
+    max-width: 44em; 
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    color: black;
+    font-family: Verdana, sans-serif;
+    font-size: 100%;
+    line-height: 140%;
+    color: #333; 
+}
+pre {
+    border: 1px dotted gray;
+    background-color: #ececec;
+    color: #1111111;
+    padding: 0.5em;
+}
+code {
+    font-family: monospace;
+}
+h1 a, h2 a, h3 a, h4 a, h5 a { 
+    text-decoration: none;
+    color: #7a5ada; 
+}
+h1, h2, h3, h4, h5 { font-family: verdana;
+                     font-weight: bold;
+                     border-bottom: 1px dotted black;
+                      }
+h1 {
+        font-size: 130%;
+}
+
+h2 {
+        font-size: 110%;
+}
+
+h3 {
+        font-size: 95%;
+}
+
+h4 {
+        font-size: 90%;
+        font-style: italic;
+}
+
+h5 {
+        font-size: 90%;
+        font-style: italic;
+}
+
+h1.title {
+        font-size: 200%;
+        font-weight: bold;
+        padding-top: 0.2em;
+        padding-bottom: 0.2em;
+        text-align: left;
+        border: none;
+}
+
+dt code {
+        font-weight: bold;
+}
+dd p {
+        margin-top: 0;
+}
+
+#footer {
+        padding-top: 1em;
+        font-size: 70%;
+        color: gray;
+        text-align: center;
+        }
+</style>
+<h1 id="artifact-modguard-identifying-integrity-confidentiality-violations-in-java-9-modules">Artifact: ModGuard: Identifying Integrity &amp; Confidentiality Violations in Java 9 Modules</h1>
+<p><strong>MISSING SOURCES IN CONTAINER</strong></p>
+<h2 id="artifact-description">Artifact Description</h2>
+<p>We provide the following artifacts:</p>
+<ul>
+<li>The results of ModGuard and SuSi in folder <code>OUR_RESULTS</code>:
+<ul>
+<li>gathered from running SuSi against Tomcat <code>OUR_RESULTS/SuSi</code></li>
+<li>gathered from running ModGuard against the naive modularization of Tomcat <code>OUR_RESULTS/Tomcat/doop_naive_tomcat_results.txt</code></li>
+<li>gathered from running ModGuard against the strict modularization of Tomcat <code>OUR_RESULTS/Tomcat/doop_strict_tomcat_results.txt</code></li>
+</ul></li>
+<li>The source code of our implementation</li>
+<li>MIC9Bench - The benchmark for checking integrity and confidentiality of Java 9 modules</li>
+<li>A docker container which contains the compiled version of ModGuard’s implementation, and a python script to re-run our evaluation</li>
+</ul>
+<h2 id="setup">Setup</h2>
+<ul>
+<li>Install docker on your machine</li>
+<li><p>Pull our docker image using:</p>
+<pre><code>docker pull andann/pldi2018:evaluation</code></pre></li>
+<li><p>After pulling the image it can be run using:</p>
+<pre><code>docker run --shm-size=&quot;6g&quot; -it andann/pldi2018:evaluation /bin/bash</code></pre></li>
+<li><p>You will find yourself in a bash session in the directory of the evaluation project</p></li>
+</ul>
+<h2 id="reproducing-the-evaluation">Reproducing the Evaluation</h2>
+<ul>
+<li><p>To reproduce the paper’s evaluation you must use the following command:</p>
+<pre><code>python3 evaluation.py CMD </code></pre></li>
+<li>The mandatory argument <code>CMD</code> can be one of the following:
+<ul>
+<li><dl>
+<dt><strong>susi</strong></dt>
+<dd>runs SuSi on Tomcat to identify critical methods, results are stored in the folder <code>SuSi_RESULTS</code>
+</dd>
+</dl></li>
+<li><dl>
+<dt><strong>tomcatNaive</strong></dt>
+<dd>runs ModGuard on the naive modularization of Tomcat stored in <code>tomcat_modularization_2017_09_19/TOMCAT_8_5_21/java9_modules</code> and compiled in <code>tomcat_modularization_2017_09_19/TOMCAT_8_5_21/output/</code> results are stored in <code>Tomcat_RESULTS/naiveTomcat/</code>
+</dd>
+</dl></li>
+<li><dl>
+<dt><strong>tomcatStrict</strong></dt>
+<dd>runs ModGuard on the strict modularization of Tomcat stored in <code>tomcat_modularization_2017_09_19/TOMCAT_8_5_21/java9_modules_minExp</code> and compiled in <code>tomcat_modularization_2017_09_19/TOMCAT_8_5_21/outputMin/</code> results are stored in <code>Tomcat_RESULTS/strictTomcat/</code>
+</dd>
+</dl></li>
+<li><dl>
+<dt><strong>tomcat</strong></dt>
+<dd>runs ModGuard on the naive and strict modularization of Tomcat, same as running <code>tomcatNaive</code> and <code>tomcatStrict</code>
+</dd>
+</dl></li>
+<li><dl>
+<dt><strong>clean</strong></dt>
+<dd>removes the generated results and entry-points
+</dd>
+</dl></li>
+<li><dl>
+<dt><strong>test</strong></dt>
+<dd>runs ModGuard on the benchmark MIC9Bench
+</dd>
+</dl></li>
+<li><dl>
+<dt><strong>all</strong></dt>
+<dd>runs susi, tomcat, and test
+</dd>
+</dl></li>
+<li><dl>
+<dt><strong>–help</strong></dt>
+<dd>shows help and usage information
+</dd>
+</dl></li>
+</ul></li>
+</ul>
+<p>For instance, to execute ModGuard’s analysis on the naive modularization of Tomcat use:</p>
+<pre><code>python3 evaluation.py tomcatNaive</code></pre>
+<p>To execute the complete evaluation use:</p>
+<pre><code>python3 evaluation.py all</code></pre>
+<p><strong>Note:</strong> The analysis may take &gt;2 h and &gt;16 GB memory each.</p>
+<p>To copy the file to your host system for subsequent analyses use:</p>
+<pre><code>docker &lt;container-id&gt;:/root/Tomcat_RESULTS &lt;path-on-your-machine&gt;
+docker &lt;container-id&gt;:/root/SuSi_RESULTS &lt;path-on-your-machine&gt;</code></pre>
+<h2 id="folders-explained-evaluation-environment">Folders Explained / Evaluation Environment</h2>
+<ul>
+<li><dl>
+<dt><code>OUR_RESULTS</code></dt>
+<dd>the results of our experiments
+<ul>
+<li><code>Tomcat</code></li>
+</ul>
+</dd>
+<dd>the results of ModGuard’s Tomcat analysis
+<ul>
+<li><code>doop_naive_tomcat_results.txt</code> results of Tomcat’s naive modularization (all packages are exported)</li>
+<li><code>doop_strict_tomcat_results.txt</code> results of Tomcat’s strict modularization (only required packages are exported)</li>
+</ul>
+</dd>
+<dt>* <code>SuSi</code></dt>
+<dd>the results of SuSi run on Tomcat
+</dd>
+</dl></li>
+<li><dl>
+<dt><code>tomcat_modularization_2017_09_19</code></dt>
+<dd>the modularized version of apache Tomcat 8.5.21 <a href="https://tomcat.apache.org/" class="uri">https://tomcat.apache.org/</a>
+<ul>
+<li>the file <code>modularization.txt</code> describes our process for modularizing Tomcat
+<ul>
+<li><dl>
+<dt><code>java9_modules</code></dt>
+<dd>the naive modularization of Tomcat
+</dd>
+</dl></li>
+<li><dl>
+<dt><code>output/classes</code></dt>
+<dd>the compiled naive modularization
+</dd>
+</dl></li>
+<li><dl>
+<dt><code>buildj9.xml</code></dt>
+<dd>ant file to build the naive modularization
+</dd>
+</dl></li>
+<li><dl>
+<dt><code>java9_modules_minExp</code></dt>
+<dd>the strict modularization of Tomcat
+</dd>
+</dl></li>
+<li><dl>
+<dt><code>outputMin/classes</code></dt>
+<dd>the compiled strict modularization
+</dd>
+</dl></li>
+<li><dl>
+<dt><code>buildj9_minExp.xml</code></dt>
+<dd>ant file to build the strict modularization
+</dd>
+</dl></li>
+</ul></li>
+</ul>
+</dd>
+</dl></li>
+<li><dl>
+<dt><code>SuSi</code></dt>
+<dd>the machine learning framework SuSi to identify critical methods in Tomcat
+<ul>
+<li>the file <code>SuSi_Input_methodsThrowingSecurityExcepetionsJDK8.pscout</code> contains all method of the JDK8 that may throw SecurityExceptions</li>
+<li>the file <code>SuSi_Input_methodsThrowingSecurityExcepetionsJDK8.pscout</code> is used as an input for SuSi</li>
+</ul>
+</dd>
+</dl></li>
+<li><dl>
+<dt><code>mic9bench</code></dt>
+<dd>the MIC9Bench - An Integrity and Confidentiality for Java 9 Modules Analysis Benchmark Suite, to compile it run <code>ant compile</code>, compiled <code>class</code> files are stored in the folder <code>build</code>
+</dd>
+</dl></li>
+<li><dl>
+<dt><code>switch_java</code></dt>
+<dd>bash script to swith between jdk8 and jdk9, to switch between jdks run <code>sh switch_java 8</code> or <code>sh swith_java 9</code>
+<ul>
+<li>jdk8 is used to run the evalution and Doop</li>
+<li>jdk9 can be used to re-compile the modularized version of Tomcat</li>
+</ul>
+</dd>
+</dl></li>
+</ul>
+</body>
+</html>
