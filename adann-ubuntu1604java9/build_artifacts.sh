@@ -44,16 +44,6 @@ mvn -DskipTests clean compile assembly:single -pl soot-module-analysis
 cp "$MODULE_ANALYSIS_BUILD" "$DIR/files/"
 
 
-# copy artifacts
-#cp "$MODULE_ANALYSIS_BUILD" "$DIR/files/"
-#cp "$MY_SOOT_INFOFLOW" "$DIR/files/"
-
-
-
-##build soot with dependencies
-#mvn -DskipTests clean compile assembly:single -pl soot
-# copy artifacts
-#cp "$SOOT_BUILD" "$DIR/files/"
 
 
 
@@ -64,8 +54,6 @@ pandoc -s -S --toc -c -H pandoc.css README.md -o README.html
 cp "README.md" "./files/"
 
 
-# create the results folders
-#tar -czf "./files/OUR_RESULTS.tar.gz" "OUR_RESULTS"
 
 
 #build the docker images
