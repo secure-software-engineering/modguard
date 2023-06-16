@@ -3,7 +3,7 @@
 	url = https://github.com/anddann/soot.git
 [submodule "doop"]
 	path = doop
-	url = https://bitbucket.org/anddann/doop.git
+	url = https://github.com/anddann/doop.git
 [submodule "soot-infoflow"]
 	path = soot-infoflow
 	url = https://github.com/anddann/soot-infoflow.git
